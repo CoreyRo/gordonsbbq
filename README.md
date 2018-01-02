@@ -1,43 +1,51 @@
-# Create React Express App
+# GordonsBBQ.net
 
-## About This Boilerplate
+## Author
+Corey Rodems
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+## Description
+gordonsbbq.net is a personal blog and social media hub for Gordon Branchaud's BBQ projects.
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
 
-## Starting the app locally
+---
+## Status
+- #### WORK IN PROGRESS
 
-Start by installing front and backend dependencies. While in this directory, run the following commands:
+---
+## Installation (Source Code)
+Source https://github.com/coreyro/gordonsbbq.git
+- git clone the repo to your computer
+- Make sure you are in the right directory, then type "yarn install" to install the required node modules. 
 
-```
-yarn install
-cd client
-yarn install
-cd ..
-``
+---
+## Tech/Framework Used
 
-After both installations complete, run the following command in your terminal:
+- [Express](https://expressjs.com/ "express")
+- [Bootstrap 4](http://getbootstrap.com/ "bootstrap")
+- [React](https://reactjs.org/ "react")
+- [create-react-app](https://github.com/facebookincubator/create-react-app "create-react-app")
+- [Mongoose](http://mongoosejs.com/ "mongoose")
+- [Heroku](https://heroku.com "heroku")
+- [Nodejs](https://nodejs.org/en/ "Nodejs")
+- [Microsoft Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code")
 
-```
-yarn start
-```
 
-That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+---
+## Breif API Reference
+[![https://nodei.co/npm/express.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/express.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/express)
 
-## Deployment (Heroku)
+[![https://nodei.co/npm/mongoose.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/mongoose.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mongoose)
 
-After confirming that you have an up to date git repository and a Heroku app created, complete the following:
+[![https://nodei.co/npm/create-react-app?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/create-react-app.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/create-react-app)
 
-1. Build the React app for production by running the following command:
+[![https://nodei.co/npm/axios.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/axios.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/axios)
 
-```
-yarn build
-```
-> Note: A yarn build will be required to register any new Post requests from any front-end JavaScript to to prevent any proxy server errors.
 
-2. Add and commit all changes to git
 
-3. Push to Heroku
+## License & Copyright
+© Corey Rodems 2017
 
-If all previous steps were followed correctly, your application should be deployed to Heroku!
+
+---
+
+[![HitCount](http://hits.dwyl.io/coreyro/gordonsbbq.svg)](http://hits.dwyl.io/coreyro/gordonsbbq)
