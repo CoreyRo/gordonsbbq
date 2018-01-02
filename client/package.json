@@ -5,8 +5,10 @@
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "axios": "^0.17.1",
+    "material-ui": "^0.20.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
     "react-scripts": "1.0.14"
   },
   "scripts": {
