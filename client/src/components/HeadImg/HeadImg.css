@@ -1,5 +1,5 @@
 .HeadImg {
-  height: 600px;
+  height: 725px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -10,7 +10,7 @@
 .HeadImg::after {
   content: "";
   display: block;
-  opacity: .6;
+  opacity: .85;
   position: absolute;
   top: 0;
   bottom: 0;

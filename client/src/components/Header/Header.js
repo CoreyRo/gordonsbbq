@@ -1,13 +1,14 @@
 import HeadImg from '../HeadImg'
 import React from 'react'
 import './Header.css'
+import Carousel from '../Carousel/Carousel';
 
 const Header = (props) => {
 	return(
-		<div>
-			<h1 className="headerTitle">Gordons BBQ</h1>
-			<h2 className="headerDesc"></h2>
-			<img className='img-fluid brand-image' src={'../public/imgs/gbbqr.png'} />
+		<div className='header-div'>
+			<img className='mx-auto d-flex img-fluid brand-img' src={'../public/imgs/gbbqr3.png'} />
+			<Carousel />
+			
 		</div>
 	)
 	

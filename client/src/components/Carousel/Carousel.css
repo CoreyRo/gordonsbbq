@@ -1,7 +1,11 @@
 
  .carousel-div {
-    position: fixed !important;
+    position: sticky !important;
+    margin-top: -400px;
+    margin-bottom: 150px;
     width: 100%;
-    top: 0;
+    height: 725px;
+    bottom: 0px;
     left: 0;
+    z-index: 2;
 }

@@ -3,16 +3,23 @@
     text-shadow: 2px 2px 2px #000 !important;
     font-family: 'Cabin', sans-serif !important;
     font-size: 72pt !important;
+    position: relative;
     font-weight: bold;
+    z-index: 10;
   }
 .headerDesc{
     color: #FFF;
     text-shadow: 2px 2px 2px #000;
     font-family: 'Kanit', sans-serif !important;
+    z-index: 124;
 }
-.headerdiv{
-    height: 600px;
-    position: fixed !important;
-    top: 0;
-    left: 0;
+.brand-img{
+    position: relative !important;
+    top: 150px;
+    height: auto;
+    width: 900px;
+    padding: 10px;
+    height: auto;
+    margin: 0 0 0 0;
+    z-index: 10;
 }
