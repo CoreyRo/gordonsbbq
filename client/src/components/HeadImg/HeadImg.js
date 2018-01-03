@@ -1,11 +1,10 @@
 import React from 'react'
 import './HeadImg.css'
 
-const HeadImg = props =>
-  <div
-    className='HeadImg text-center'
-    style={{ backgroundImage: `url(${props.backgroundImage})` }}
-  >
-  </div>
+const HeadImg = props => {
+  return (
+    <div className='HeadImg text-center' style={{ backgroundImage: `url(${props.image})` }} />
+  )
+}
 
 export default HeadImg

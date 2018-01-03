@@ -30,7 +30,7 @@ mongoose.connect(
 // *** Express app setup
 // ==============================================================================
 app.use(cors()) // must be before BodyParser
-// app.use('/public', express.static('public')) //static directory
+app.use('/public', express.static('public')) //static directory
 app.use(morgan('dev')) //morgan logger
 app.use(bodyParser.urlencoded({
     extended:false

@@ -22,20 +22,20 @@ class CarouselComponent extends Component {
             speed: 1000,
             slidesToShow: 1,
             slidesToScroll: 1,
-            accessibility: false
-          }
+            accessibility: false,
+            className: 'carousel-div'
+            }
         return (   
-            <div>
-                <Header />
+            <div >
                 <Slider {...settings}>
                     <div>
-                        <HeadImg backgroundImage='https://i.imgur.com/mwegaiS.jpg' />
+                        <HeadImg image='../public/imgs/1.jpg' />
                     </div>
                     <div>
-                        <HeadImg backgroundImage='https://i.imgur.com/CPtXEHq.jpg' />
+                        <HeadImg image='../public/imgs/2.jpg' />
                     </div>
                     <div>
-                        <HeadImg backgroundImage='https://i.imgur.com/rKOLmBN.jpg' />
+                        <HeadImg image='../public/imgs/3.jpg' />
                     </div>
                     
                 </Slider>

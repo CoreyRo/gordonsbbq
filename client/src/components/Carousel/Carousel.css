@@ -1,9 +1,7 @@
-/* .Carousel-Div {
-    height: 400px !important;
-    border: 40px solid blue;
-    overflow: hidden;
-}
 
-.carouselholder{
-    image-orientation: inherit;
-} */
+ .carousel-div {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
