@@ -1,8 +1,3 @@
-.seperator{
-    border-top: 3px solid black;
-    margin: 0 15px 25px 15px;
-    width: 100%;
-}
 
 .gordon-pic{
     box-shadow: 2px 2px 4px 1px rgb(87, 87, 87);
@@ -19,3 +14,27 @@
     border-radius: 15px;
 }
 
+.about-text{
+
+}
+
+@media screen and (max-width: 767px)  {
+    .about-text-div{
+        position: relative !important;
+        padding: 15px 20px 15px 25px !important;
+        margin: 0px 0px 20px 0px !important;
+        overflow: scroll;
+        height: 20rem;        
+    }
+
+    .about-pic-div{
+        border-top: 1px solid #666;
+        padding-top: 30px;
+        margin-top: 0px;
+    }    
+
+    .about-text{
+        text-overflow: ellipsis !important;
+    }
+    
+}

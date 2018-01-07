@@ -1,0 +1,39 @@
+.contact-h1{
+    border-bottom: 2px solid #000;
+}
+
+.contact-div{
+    position: relative;
+    background-color: rgb(238, 238, 238);
+    padding: 20px 10px 20px 10px;
+    border-radius: 15px;
+}
+
+.contact-text{
+
+}
+
+.contact-title{
+    border-bottom: 1px solid #000;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px)  {
+    .contact-div{
+        position: relative !important;
+        padding: 15px 25px 15px 10px !important;
+        margin: 0px 0px 20px 0px !important;
+        overflow: scroll;
+        height: 22rem;      
+        border-radius: 8px !important;
+        box-shadow: 2px 2px 2px #888;  
+    }
+    h1{
+        font-size: 18pt;
+    }
+
+    .contact-text{
+        text-overflow: ellipsis !important;
+    }
+    
+}

@@ -5,8 +5,8 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Carousel from './components/Carousel'
 import Header from './components/Header'
-import injectTapEventPlugin from 'react-tap-event-plugin'
 import './App.css'
+import injectTapEventPlugin from 'react-tap-event-plugin'
 injectTapEventPlugin()
 
 
@@ -19,13 +19,13 @@ class App extends Component {
 	}
 	
   	render() {
+		
 		return (
 	  		<Router>
-				<div>
+				<div id='home'>
 					<Navbar />
 					<Header />
-
-					<Route exact path='/' component={Home} />
+					<Route path='/' component={Home} />
 					<Footer />
 				</div>
 			</Router>

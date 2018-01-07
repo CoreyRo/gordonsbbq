@@ -2,8 +2,51 @@
     height: 80px;
 }
 .bg-dark{
-    opacity: 0.93;
+    opacity: 0.96;
 }
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d3d3d3+0,a3a3a3+100 */
+    background: #d3d3d3; /* Old browsers */
+    background: -moz-linear-gradient(top, #d3d3d3 0%, #a3a3a3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d3d3d3 0%,#a3a3a3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d3d3d3 0%,#a3a3a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d3', endColorstr='#a3a3a3',GradientType=0 ); /* IE6-9 */
+    opacity: 1 !important;
+    border:none !important;
+}
+.dropdown-menu{
+    background: #000000 !important;
+
+}
+
+.dropdown-item{
+    color: rgba(255,255,255,.5) !important;
+}
+.dropdown-item:hover{
+    font-weight: bold;
+}
+
+#insta:hover{
+    color:rgb(255, 0, 179) !important;
+}
+#fb:hover{
+    color:rgb(0, 60, 255) !important;
+}
+#yt:hover{
+    color:rgb(255, 0, 0) !important;
+}
+#tw:hover{
+    color:rgb(132, 0, 255) !important;
+}
+#soc-menu{
+    color: rgba(255,255,255,.5) !important;
+    background: transparent !important;
+    margin: 0 0 0 0;
+}
+
 .navbar .nav{
     height: 50px;
     z-index: 5;
@@ -17,7 +60,7 @@
 .nav-pill{   
     background-color: transparent;
     text-align: center;
-    border-bottom: 1px solid rgb(41, 41, 41);
+    border-bottom: 1px solid rgb(41, 41, 41) !important;
     /* margin: 10px 15px 5px 15px; */
     position: relative;
     bottom: 0 !important;
@@ -28,7 +71,7 @@
 .brand-pos{
     margin: 0 0 0 0 !important;
     position: relative !important;
-    left: 5%;
+    left: 50%;
 }
 .sticky-top{
     border-top: 4px solid #FFF;
@@ -55,7 +98,16 @@
         padding: 0 0 0 0 !important;
         margin: 0 0 15px 0 !important;
         position: relative !important;
-        right: 0;
+        right: 0 !important;
+    }
+    .brand-pos{
+        margin: 0 0 0 0 !important;
+        position: relative !important;
+        left: 5% !important;
+    }
+
+    .brand-image{
+        height: 50px;
     }
     
 }
