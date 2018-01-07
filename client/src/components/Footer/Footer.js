@@ -59,19 +59,19 @@ class Footer extends Component {
 
                             <h5 className="mx-auto soc-media-title">Social Media Links</h5>
 
-                            <a href="https://github.com/JakeGreer" rel="noopener noreferrer" target="_blank">
+                            <a href="https://www.instagram.com/gordonsbbq/" rel="noopener noreferrer" target="_blank">
                             <img className="soc-media-icon img-fluid" alt="insta logo" src="../public/imgs/instalogo.png" />
                             </a>
 
-                            <a href="https://github.com/JakeGreer" rel="noopener noreferrer" target="_blank">
+                            <a href="https://www.facebook.com/gordonsbarbecue/" rel="noopener noreferrer" target="_blank">
                             <img className="soc-media-icon img-fluid" alt="github logo" src="../public/imgs/fblogo.png" />
                             </a>
 
-                            <a href="https://github.com/JakeGreer" rel="noopener noreferrer" target="_blank">
+                            <a href="https://www.youtube.com/user/Nhoddus/featured" rel="noopener noreferrer" target="_blank">
                             <img className="soc-media-icon img-fluid" alt="github logo" src="../public/imgs/ytlogo.png" />
                             </a>
 
-                            <a href="https://github.com/JakeGreer" rel="noopener noreferrer" target="_blank">
+                            <a href="https://www.twitch.tv/nhoddus" rel="noopener noreferrer" target="_blank">
                             <img className="soc-media-icon img-fluid" alt="github logo" src="../public/imgs/twitchlogo.png" />
                             </a>
 
@@ -81,7 +81,6 @@ class Footer extends Component {
         </footer>
         )
     }
-
 
 }
 

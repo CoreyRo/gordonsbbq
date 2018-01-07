@@ -28,10 +28,10 @@ const Navbar = () => {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Social Media</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Instagram</a>
-                                <a class="dropdown-item" href="#">Facebook</a>
-                                <a class="dropdown-item" href="#">YouTube</a>
-                                <a class="dropdown-item" href="#">Twitch</a>
+                                <a class="dropdown-item" rel="noopener noreferrer" target='_blank' href="https://www.instagram.com/gordonsbbq/">Instagram</a>
+                                <a class="dropdown-item" rel="noopener noreferrer" target='_blank' href="https://www.facebook.com/gordonsbarbecue/">Facebook</a>
+                                <a class="dropdown-item" rel="noopener noreferrer" target='_blank' href="https://www.youtube.com/user/Nhoddus/featured">YouTube</a>
+                                <a class="dropdown-item" rel="noopener noreferrer" target='_blank' href="https://www.twitch.tv/nhoddus">Twitch</a>
                             </div>
                         </li>
                         <li className="nav-item active">
