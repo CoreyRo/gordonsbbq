@@ -14,27 +14,61 @@
     border-radius: 15px;
 }
 
-.about-text{
 
+
+.about-text-div-1{
+    text-indent: 3rem;
+    font-size: 16pt;
+}
+
+.about-text-div-2{
+    font-size: 14pt;
+    text-indent: 3rem;
+}
+
+.about-text-div-3{
+    font-size: 14pt;
+    text-indent: 3rem;
 }
 
 @media screen and (max-width: 767px)  {
     .about-text-div{
         position: relative !important;
-        padding: 15px 20px 15px 25px !important;
-        margin: 0px 0px 20px 0px !important;
         overflow: scroll;
-        height: 20rem;        
+        height: 28rem;    
+        padding-top: 30px !important;
+        margin-top: 0px;     
     }
 
-    .about-pic-div{
-        border-top: 1px solid #666;
-        padding-top: 30px;
-        margin-top: 0px;
-    }    
-
-    .about-text{
-        text-overflow: ellipsis !important;
+    .about-text-div-1{
+        text-indent: 2rem;
+        font-size: 12pt;
     }
     
+    .about-text-div-2{
+        font-size: 12pt;
+        text-indent: 2rem;
+    }
+
+    .about{
+        padding-bottom: 20px !important;
+    }
+
+    .about-div-2{
+        border-top: 2px solid #555;
+        padding-top: 15px;
+    }
+    .about-pic-div-1{
+        border-top: 1px solid #999;
+        padding-top: 15px;
+        margin-top: -10px;
+    }
+
+    .about-pic-div-2{
+        border-bottom: 1px solid #999;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+    }       
+
+
 }
