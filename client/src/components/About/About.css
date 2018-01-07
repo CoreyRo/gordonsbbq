@@ -1,0 +1,21 @@
+.seperator{
+    border-top: 3px solid black;
+    margin: 0 15px 25px 15px;
+    width: 100%;
+}
+
+.gordon-pic{
+    box-shadow: 2px 2px 4px 1px rgb(87, 87, 87);
+    border-radius: 4px;
+}
+
+.about-h1{
+    border-bottom: 2px solid #000;
+}
+
+.about-div{
+    background-color: rgb(238, 238, 238);
+    padding: 20px 10px 20px 10px;
+    border-radius: 15px;
+}
+

@@ -1,0 +1,96 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+
+.footer{
+    margin-top: 75px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.Contact{
+    font-size: 18pt;
+    border-bottom: 2px solid #FFF;
+    margin: 15px;
+}
+.form-control{
+    margin: 5px;
+}
+
+.footerTop {
+    background-color: #000;
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
+
+#regEmail{
+
+}
+
+#regEmailLabel{
+    margin: 0 15px 0 0;
+}
+
+.soc-media-links{
+    padding: 0px;
+    margin: -5px 0 15px 0 !important;
+}
+.soc-media-icon{
+    width: 50px;
+    padding: 5px;
+    margin: 0 5px 0 5px;
+}
+.soc-media-title{
+    color: rgb(184, 184, 184);
+    margin:15px 0 10px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 2px solid rgb(112, 112, 112);
+    width: 50%;
+    
+}
+.footerBot{
+    font-size: 10pt;
+    color: #FFFFFF;
+    /* IE10+ */ 
+    background-image: -ms-linear-gradient(top, rgb(63, 63, 63) 0%, rgb(45, 45, 45) 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, rgb(63, 63, 63) 0%, rgb(45, 45, 45) 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, rgb(63, 63, 63) 0%, rgb(45, 45, 45) 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(63, 63, 63)), color-stop(100, rgb(45, 45, 45)));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, rgb(63, 63, 63) 0%, rgb(45, 45, 45) 100%);
+    /* W3C Markup */ 
+    background-image: linear-gradient(to bottom, rgb(63, 63, 63) 0%, rgb(45, 45, 45) 100%);
+    padding: 0 0 0 0px;
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+.footer-item{
+    text-align: center !important;
+}
+
+.active{
+    color: #FFF !important;
+}
+
+.footer-link{
+    text-align: center !important;
+}
+
+.footer-nav{
+    text-align: center !important;
+}

@@ -4,7 +4,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -24,12 +24,12 @@ time, mark, audio, video {
     vertical-align: baseline;
 
 }
-/* body{
+body{
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;
     overflow: auto;
-} */
+} 
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

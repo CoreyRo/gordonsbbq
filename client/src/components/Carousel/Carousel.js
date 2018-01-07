@@ -28,7 +28,7 @@ class CarouselComponent extends Component {
         return (   
             <div >
                 <Slider {...settings}>
-                    <div>
+                    <div id="home">
                         <HeadImg image='../public/imgs/1.jpg' />
                     </div>
                     <div>
