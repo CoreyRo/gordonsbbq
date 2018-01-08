@@ -24,16 +24,26 @@ module.exports =
         console.log("textBody", textBody)
 
         // // create reusable transporter object using the default SMTP transport
+        // let transporter = nodemailer.createTransport({
+        //     service:'smtp.gmail.com',
+        //     port: 465,
+        //     secure: true, // use TLS
+        //     auth: {
+        //         user: 'noreply.gordonsbbq@gmail.com',
+        //         pass: 'D1meb@g86n87'
+                
+        //     }
+        // });
+
         let transporter = nodemailer.createTransport({
-            service:'smtp.gmail.com',
-            port: 465,
-            secure: true, // use TLS
+            service:'gmail',
             auth: {
                 user: 'noreply.gordonsbbq@gmail.com',
                 pass: 'D1meb@g86n87'
-                
             }
+
         });
+
         message = 
             `***DO NOT RESPOND TO THIS EMAIL ADDRESS, USE THE SENDER'S ADDRESS LISTED BELOW TO RESPOND***
 
