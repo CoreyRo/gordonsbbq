@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ScrollAnimation from 'react-animate-on-scroll';
 import './About.css'
 
 class About extends Component {
@@ -15,7 +14,6 @@ class About extends Component {
 
         return(
                 <div className='scroll-adjust' id='about'>
-
                         <div className='row'>
                             <div className='col-md-12'>
                                 <h1 className='about-h1'>ABOUT ME SECTION</h1>
@@ -63,17 +61,12 @@ class About extends Component {
                                             Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Enim ut sem viverra aliquet eget sit amet tellus cras. 
                                             Aliquet nec ullamcorper sit amet risus nullam eget felis eget.</p>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
         )
-
     }
-
 }
 
 export default About

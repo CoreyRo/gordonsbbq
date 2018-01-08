@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './pages/Home'
+import Contact from './components/Contact'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Carousel from './components/Carousel'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import './App.css'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 injectTapEventPlugin()
@@ -19,12 +19,11 @@ class App extends Component {
 	}
 	
   	render() {
-		
 		return (
 	  		<Router>
-				<div id='home'>
+				<div id='home'>	
 					<Navbar />
-					<Header />
+					<Header /> 		
 					<Route path='/' component={Home} />
 					<Footer />
 				</div>

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Carousel.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HeadImg from '../HeadImg'
-import Header from '../Header'
-var Carousel = require('react-responsive-carousel').Carousel;
+// import ReactDOM from 'react-dom';
+// const Carousel = require('react-responsive-carousel').Carousel;
+// import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
 
  
 class CarouselComponent extends Component {

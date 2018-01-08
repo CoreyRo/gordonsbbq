@@ -1,13 +1,16 @@
 // ******************************************************************************
-//apiRoutes.js - This file holds the api routes
-//
+// apiRoutes.js - This file holds the api routes
+
 // ******************************************************************************
 // *** Dependencies
 // ==============================================================================
-// const app = require("express").Router()
-// const api = require("../controllers/apiController.js")
+const router = require("express").Router()
+const api = require("../controllers/apiController.js")
 
-//api routes
-// module.exports = {
+// api routes
 
-// }
+    router
+        .route('/contact')
+        .post(api.sendMail)
+
+module.exports = router

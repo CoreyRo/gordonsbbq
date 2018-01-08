@@ -4,18 +4,17 @@
 // ******************************************************************************
 // *** Dependencies
 // ==============================================================================
-// const path = require("path")
-// const router = require("express").Router()
-// const apiRoutes = require("./apiRoutes")
+const router = require("express").Router()
+const apiRoutes = require("./apiRoutes")
 
 
 // // ******************************************************************************
 // // *** Setup api routes
 // // ==============================================================================
-// router.use("/api", apiRoutes) //adds /api to apiRoutes
+router.use("/api", apiRoutes) //adds /api to apiRoutes
 
 
 // // ******************************************************************************
 // // *** export app routes
 // // ==============================================================================
-// module.exports = app;
+module.exports = router

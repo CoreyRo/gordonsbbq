@@ -8,7 +8,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
             <div className='container-fluid '>
             <a href="#home">
-                <img className='img-fluid brand-image brand-pos' src={'../public/imgs/gbbq1.png'} />
+                <img className='img-fluid brand-image brand-pos' src={'../public/imgs/gbbq1.png'} alt='gordonsbbq logo'/>
             </a>
                 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" aria-haspopup="true" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +31,10 @@ const Navbar = () => {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#contact">Contact <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#contactForm"  data-toggle="modal" data-target="#contactForm">Contact <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" id='soc-menu' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Social Media</a>
+                            <a className="nav-link dropdown-toggle" id='soc-menu' data-toggle="dropdown" href='/' role="button" aria-haspopup="true" aria-expanded="false">Social Media</a>
                             <div className="dropdown-menu">
                                 <a className="dropdown-item d-inlne-block" id='insta' rel="noopener noreferrer" target='_blank' href="https://www.instagram.com/gordonsbbq/">Instagram</a>
                                 <a className="dropdown-item" id='fb' rel="noopener noreferrer" target='_blank' href="https://www.facebook.com/gordonsbarbecue/">Facebook</a>

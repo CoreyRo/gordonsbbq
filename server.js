@@ -9,7 +9,6 @@ const bodyParser = require('body-parser')
 const path = require('path')
 const mongoose = require('mongoose')
 const env = require('dotenv').load()
-const routes = require('./routes')
 const db = require('./models')
 const morgan = require('morgan')
 const cors = require('cors')
@@ -30,12 +29,10 @@ mongoose.connect(
 // *** Express app setup
 // ==============================================================================
 app.use(cors()) // must be before BodyParser
-app.use('/public', express.static('public')) //static directory
-app.use(morgan('dev')) //morgan logger
-app.use(bodyParser.urlencoded({
-    extended:false
-    }
-))
+app.use('/public', express.static('public')) // Static directory
+app.use(morgan('dev')); // log every request to the console
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -46,7 +43,8 @@ if (process.env.NODE_ENV === "production") {
 // ******************************************************************************
 // *** Routes
 // ==============================================================================
-// app.use(routes)
+const routes = require("./routes")
+app.use(routes)
 
 // Send every request to the React app
 // Define any API routes before this runs

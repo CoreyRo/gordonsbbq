@@ -5114,7 +5114,7 @@ prop-types-extra@^1.0.1:
   dependencies:
     warning "^3.0.0"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.5.9, prop-types@^15.6.0:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -5225,13 +5225,6 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-animate-on-scroll@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/react-animate-on-scroll/-/react-animate-on-scroll-1.6.0.tgz#13745d0bb354d41ab466d1390b36269323f017f8"
-  dependencies:
-    lodash.throttle "^4.1.1"
-    prop-types "^15.5.9"
-
 react-bootstrap@^0.31.5:
   version "0.31.5"
   resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-0.31.5.tgz#57040fa8b1274e1e074803c21a1b895fdabea05a"
@@ -5338,6 +5331,12 @@ react-router@^4.2.0:
     path-to-regexp "^1.7.0"
     prop-types "^15.5.4"
     warning "^3.0.0"
+
+react-s-alert@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-s-alert/-/react-s-alert-1.4.0.tgz#34cd85b6183fa54c9bd1bd34a2f6ef7e0e14ca89"
+  dependencies:
+    babel-runtime "^6.23.0"
 
 react-scripts@1.0.14:
   version "1.0.14"
