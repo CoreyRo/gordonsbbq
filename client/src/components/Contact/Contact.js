@@ -40,7 +40,7 @@ class Contact extends Component {
                 .then(res => {
                     this.setState({
                         sent: !this.state.sent
-                    }, () => this.confirmPost)
+                    })
                 })
                 .catch(err => console.log('submit error', err)) 
             }
@@ -58,19 +58,19 @@ class Contact extends Component {
         }
     }
 
-    confirmPost = () => {
-        console.log("C")
-        // document.getElementById('closeButton').addEventListener('close.bs.alert', this.confirmPost)
-        // axios.post('/api/confirm',{
-        //     payload: this.state
-        // })
-        // .then(res => {
-        //     this.setState({
-        //         sent: !this.state.sent
-        //     })
-        // })
-        // .catch(err => console.log('submit err', err)) 
-    }
+    // confirmPost = () => {
+    //     console.log("C")
+    //     // document.getElementById('closeButton').addEventListener('close.bs.alert', this.confirmPost)
+    //     // axios.post('/api/confirm',{
+    //     //     payload: this.state
+    //     // })
+    //     // .then(res => {
+    //     //     this.setState({
+    //     //         sent: !this.state.sent
+    //     //     })
+    //     // })
+    //     // .catch(err => console.log('submit err', err)) 
+    // }
 
     recapCallback = () =>{
         this.setState({
