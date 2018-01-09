@@ -7,22 +7,11 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const path = require('path')
-const mongoose = require('mongoose')
 const env = require('dotenv').load()
-const db = require('./models')
 const morgan = require('morgan')
 const cors = require('cors')
 const app = express()
 const PORT = process.env.PORT || 3001
-
-//Setup mogoose promises
-mongoose.Promise = global.Promise
-//Connect to MongoDB
-mongoose.connect(
-    process.env.MONGODB_URI || 'mongod://127.0.0.1/gordons-bbq-site',{
-        useMongoClient: true
-    }
-)
 
 
 // ******************************************************************************
