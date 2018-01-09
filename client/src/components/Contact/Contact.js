@@ -40,10 +40,7 @@ class Contact extends Component {
                 .then(res => {
                     this.setState({
                         sent: !this.state.sent
-                    },
-                    function(){
-                        this.confirmPost
-                    })
+                    }, () => this.confirmPost)
                 })
                 .catch(err => console.log('submit err', err)) 
             }
