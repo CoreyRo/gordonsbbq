@@ -42,14 +42,14 @@ class Contact extends Component {
                         sent: !this.state.sent
                     }, () => this.confirmPost)
                 })
-                .catch(err => console.log('submit err', err)) 
+                .catch(err => console.log('submit error', err)) 
             }
             else{
                 window.location.reload()
             }
         }
         else{
-            Alert.error('Email addresses do not match', {
+            Alert.error('Email addresses do not match!', {
                 position: 'top',
                 effect: 'scale',
                 timeout: 'none',
