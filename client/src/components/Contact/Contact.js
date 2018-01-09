@@ -60,6 +60,12 @@ class Contact extends Component {
         }
     }
 
+    recapCallback = () =>{
+        this.setState({
+            verified: !this.state.verified
+        })
+    }
+
     expiredCallback = (res) => {
 
     }
