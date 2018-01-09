@@ -13,8 +13,8 @@ const api = require("../controllers/apiController.js")
         .route('/contact')
         .post(api.sendMail)
 
-    router
-        .route('/confirm')
-        .post(api.sendConfirmation)
+    // router
+    //     .route('/confirm')
+    //     .post(api.sendConfirmation)
 
 module.exports = router

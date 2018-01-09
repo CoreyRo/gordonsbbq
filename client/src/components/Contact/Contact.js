@@ -40,7 +40,7 @@ class Contact extends Component {
                 .then(res => {
                     this.setState({
                         sent: !this.state.sent
-                    }, () => this.confirmPost())
+                    })
                 })
                 .catch(err => console.log('submit err', err)) 
             }
@@ -58,24 +58,24 @@ class Contact extends Component {
         }
     }
 
-    confirmPost = () => {
+    // confirmPost = () => {
         
-        axios.post('/api/confirm',{
-            payload: this.state
-        })
-        .then(res => {
-            this.setState({
-                sent: !this.state.sent
-            })
-        })
-        .catch(err => console.log('submit err', err)) 
-    }
+    //     axios.post('/api/confirm',{
+    //         payload: this.state
+    //     })
+    //     .then(res => {
+    //         this.setState({
+    //             sent: !this.state.sent
+    //         })
+    //     })
+    //     .catch(err => console.log('submit err', err)) 
+    // }
 
-    recapCallback = () =>{
-        this.setState({
-            verified: !this.state.verified
-        })
-    }
+    // recapCallback = () =>{
+    //     this.setState({
+    //         verified: !this.state.verified
+    //     })
+    // }
 
     expiredCallback = (res) => {
 
