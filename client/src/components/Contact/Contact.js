@@ -42,7 +42,9 @@ class Contact extends Component {
                         sent: !this.state.sent
                     })
                 })
-                .catch(err => console.log('submit err', err)) 
+                .catch(err => {
+                    window.location.reload()
+                }) 
             }
             else{
                 window.location.reload()
@@ -57,25 +59,6 @@ class Contact extends Component {
             })
         }
     }
-
-    // confirmPost = () => {
-        
-    //     axios.post('/api/confirm',{
-    //         payload: this.state
-    //     })
-    //     .then(res => {
-    //         this.setState({
-    //             sent: !this.state.sent
-    //         })
-    //     })
-    //     .catch(err => console.log('submit err', err)) 
-    // }
-
-    // recapCallback = () =>{
-    //     this.setState({
-    //         verified: !this.state.verified
-    //     })
-    // }
 
     expiredCallback = (res) => {
 
@@ -97,7 +80,7 @@ class Contact extends Component {
     }
 
     closingButton = () => {
-        if(this.state.sent === true){
+        if(this.state.sent){
             document.getElementById('closeButton').addEventListener('close.bs.alert', window.location.reload())
         }
     }
