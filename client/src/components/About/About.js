@@ -24,7 +24,7 @@ class About extends Component {
                             <div className='col-md-12'>
                                 <div className='row about-div-1 about'>
 
-                                    <div className='col-md-7 about-text-div-1'>
+                                    <div className='col-md-8 about-text-div-1'>
                                         <p className='about-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                             Cursus sit amet dictum sit amet justo donec enim. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. 
                                             Elementum nibh tellus molestie nunc. Ut ornare lectus sit amet est placerat. </p>
@@ -36,8 +36,12 @@ class About extends Component {
                                         <p className='about-text'>Tempus quam pellentesque nec nam aliquam sem et tortor consequat. 
                                             Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Enim ut sem viverra aliquet eget sit amet tellus cras. 
                                             Aliquet nec ullamcorper sit amet risus nullam eget felis eget.</p>
+
+                                        <p className='about-text'>Tempus quam pellentesque nec nam aliquam sem et tortor consequat. 
+                                            Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Enim ut sem viverra aliquet eget sit amet tellus cras. 
+                                            Aliquet nec ullamcorper sit amet risus nullam eget felis eget.</p>
                                     </div>
-                                    <div className='col-md-5 about-pic-div-1'>
+                                    <div className='col-md-4 about-pic-div-1'>
                                         <img className="img-fluid mx-auto gordon-pic" src="../public/imgs/gordonbranchaud.jpg" alt="gordon-branchaud" />
                                     </div>
                                 </div>

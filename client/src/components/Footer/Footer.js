@@ -23,12 +23,9 @@ class Footer extends Component {
 
     handleSubmit = (event) =>
     {
-        console.log('clicked submit')
         // event.preventDefault()
-
         // axios.post('/api/mailer/join-mailer', { newUser: this.state.regEmail })
         // .then(res => console.log("submit ", res))
-
         // this.setState({ regEmail: '' })
     }
 

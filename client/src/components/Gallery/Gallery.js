@@ -7,8 +7,12 @@ const Gallery = () => {
         <div className='scroll-adjust' id='gallery'>
             <div className='row mx-auto'>
                 <div className='col-md-12'>
-                    <h1 className='about-h1'>Gallery View</h1>
-                    <h3>Placeholder Title</h3>
+                    <span className=''>
+                        <img className="soc-icon-header img-fluid d-inline-block" alt="insta logo" src="../public/imgs/instalogo.png" />
+                        <h1 className='d-inline-block about-h1'>Instagram Gallery</h1>
+                    </span>
+                    
+                    <p>Follow <a href="https://www.instagram.com/gordonsbbq/" rel="noopener noreferrer" target="_blank">@GordonsBBQ</a> on Instagram for more</p>
                 </div>
             </div>
             <div className='row mx-auto gallery-div'>
@@ -38,7 +42,7 @@ const Gallery = () => {
                                             <img className="soc-icon img-fluid d-inline-block" alt="insta logo" src="../public/imgs/instalogo.png" />
                                             <h5 className="card-title d-inline-block">@gordonsbbq</h5>
                                         </span>
-                                        <p className="card-text">I wake up at 3-4pm on my days off, so this still counts as breakfast. Scrambled egg, fried potatoes, caramelized onion, roasted jalapeño and @charmanbrand Caribbean hotsauce all play well together, in a glorious mess.</p>  
+                                        <p className="card-text">Aw yeah. @meatchurch Deez Nuts cleaned it up nice! Tightened up with an agave nectar, garlic and chili glaze before pulling it off the pecan. Solid.</p>  
                                     </div>
                                 </div>
                             </a>
@@ -53,7 +57,7 @@ const Gallery = () => {
                                             <img className="soc-icon img-fluid d-inline-block" alt="insta logo" src="../public/imgs/instalogo.png" />
                                             <h5 className="card-title d-inline-block">@gordonsbbq</h5>
                                         </span>
-                                        <p className="card-text">I wake up at 3-4pm on my days off, so this still counts as breakfast. Scrambled egg, fried potatoes, caramelized onion, roasted jalapeño and @charmanbrand Caribbean hotsauce all play well together, in a glorious mess.</p>  
+                                        <p className="card-text">New York Strippin' baby.</p>  
                                     </div>
                                 </div>
                             </a>
@@ -68,7 +72,7 @@ const Gallery = () => {
                                             <img className="soc-icon img-fluid d-inline-block" alt="insta logo" src="../public/imgs/instalogo.png" />
                                             <h5 className="card-title d-inline-block">@gordonsbbq</h5>
                                         </span>
-                                        <p className="card-text">I wake up at 3-4pm on my days off, so this still counts as breakfast. Scrambled egg, fried potatoes, caramelized onion, roasted jalapeño and @charmanbrand Caribbean hotsauce all play well together, in a glorious mess.</p>  
+                                        <p className="card-text">Beef ribs, smoked 5 hours at 260, because we don't mind eating dinner at 3AM.</p>  
                                     </div>
                                 </div>
                             </a>
@@ -83,7 +87,7 @@ const Gallery = () => {
                                             <img className="soc-icon img-fluid d-inline-block" alt="insta logo" src="../public/imgs/instalogo.png" />
                                             <h5 className="card-title d-inline-block">@gordonsbbq</h5>
                                         </span>
-                                        <p className="card-text">I wake up at 3-4pm on my days off, so this still counts as breakfast. Scrambled egg, fried potatoes, caramelized onion, roasted jalapeño and @charmanbrand Caribbean hotsauce all play well together, in a glorious mess.</p>  
+                                        <p className="card-text">Starting off the new year shellfishly. </p>  
                                     </div>
                                 </div>
                             </a>
@@ -98,7 +102,7 @@ const Gallery = () => {
                                             <img className="soc-icon img-fluid d-inline-block" alt="insta logo" src="../public/imgs/instalogo.png" />
                                             <h5 className="card-title d-inline-block">@gordonsbbq</h5>
                                         </span>
-                                        <p className="card-text">I wake up at 3-4pm on my days off, so this still counts as breakfast. Scrambled egg, fried potatoes, caramelized onion, roasted jalapeño and @charmanbrand Caribbean hotsauce all play well together, in a glorious mess.</p>  
+                                        <p className="card-text">Baby backs and spare ribs pulling on back!</p>  
                                     </div>
                                 </div>
                             </a>
@@ -113,7 +117,7 @@ const Gallery = () => {
                                             <img className="soc-icon img-fluid d-inline-block" alt="insta logo" src="../public/imgs/instalogo.png" />
                                             <h5 className="card-title d-inline-block">@gordonsbbq</h5>
                                         </span>
-                                        <p className="card-text">I wake up at 3-4pm on my days off, so this still counts as breakfast. Scrambled egg, fried potatoes, caramelized onion, roasted jalapeño and @charmanbrand Caribbean hotsauce all play well together, in a glorious mess.</p>  
+                                        <p className="card-text">Smoked loin chops last night, with @zoso71m because it was Wednesday in Ojai, which as we all know, is the night to party... </p>  
                                     </div>
                                 </div>
                             </a>
@@ -128,7 +132,7 @@ const Gallery = () => {
                                             <img className="soc-icon img-fluid d-inline-block" alt="insta logo" src="../public/imgs/instalogo.png" />
                                             <h5 className="card-title d-inline-block">@gordonsbbq</h5>
                                         </span>
-                                        <p className="card-text">I wake up at 3-4pm on my days off, so this still counts as breakfast. Scrambled egg, fried potatoes, caramelized onion, roasted jalapeño and @charmanbrand Caribbean hotsauce all play well together, in a glorious mess.</p>  
+                                        <p className="card-text">Happy *belated* National Taco Day! This took way too long to get done before 12 last night, but when you run out of tortillas, you use what you have... </p>  
                                     </div>
                                 </div>
                             </a>
@@ -143,7 +147,7 @@ const Gallery = () => {
                                             <img className="soc-icon img-fluid d-inline-block" alt="insta logo" src="../public/imgs/instalogo.png" />
                                             <h5 className="card-title d-inline-block">@gordonsbbq</h5>
                                         </span>
-                                        <p className="card-text">I wake up at 3-4pm on my days off, so this still counts as breakfast. Scrambled egg, fried potatoes, caramelized onion, roasted jalapeño and @charmanbrand Caribbean hotsauce all play well together, in a glorious mess.</p>  
+                                        <p className="card-text">One last meal, before going full blown vegan.</p>  
                                     </div>
                                 </div>
                             </a>

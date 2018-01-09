@@ -13,7 +13,11 @@
     padding: 20px 10px 20px 10px;
     border-radius: 15px;
 }
-
+.about-div-2{
+    border-top: 2px solid #555;
+    padding-top: 50px;
+    margin-top: 50px !important;
+}
 
 
 .about-text-div-1{

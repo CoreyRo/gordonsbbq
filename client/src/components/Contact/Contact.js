@@ -59,17 +59,16 @@ class Contact extends Component {
     }
 
     confirmPost = () => {
-        console.log("C")
-        // document.getElementById('closeButton').addEventListener('close.bs.alert', this.confirmPost)
-        // axios.post('/api/confirm',{
-        //     payload: this.state
-        // })
-        // .then(res => {
-        //     this.setState({
-        //         sent: !this.state.sent
-        //     })
-        // })
-        // .catch(err => console.log('submit err', err)) 
+        
+        axios.post('/api/confirm',{
+            payload: this.state
+        })
+        .then(res => {
+            this.setState({
+                sent: !this.state.sent
+            })
+        })
+        .catch(err => console.log('submit err', err)) 
     }
 
     recapCallback = () =>{
@@ -96,6 +95,12 @@ class Contact extends Component {
     closeAll = (e) => {     
         Alert.closeAll()
     }
+
+    closingButton = () => {
+        if(this.state.sent === true){
+            document.getElementById('closeButton').addEventListener('close.bs.alert', window.location.reload())
+        }
+    }
     
     render(){
         return(
@@ -104,7 +109,7 @@ class Contact extends Component {
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title" id="contactModal">Contact Gordon's BBQ</h5>
-                            <button type="button" onClick={this.testing} className="close" data-dismiss="modal" id='closeButton' aria-label="Close">
+                            <button type="button" onClick={this.closingButton} className="close" data-dismiss="modal" id='closeButton' aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
