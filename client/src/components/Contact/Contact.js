@@ -62,15 +62,16 @@ class Contact extends Component {
     }
 
     confirmPost = () => {
-        axios.post('/api/confirm',{
-            payload: this.state
-        })
-        .then(res => {
-            this.setState({
-                sent: !this.state.sent
-            })
-        })
-        .catch(err => console.log('submit err', err)) 
+        console.log("CONFIRMING")
+        // axios.post('/api/confirm',{
+        //     payload: this.state
+        // })
+        // .then(res => {
+        //     this.setState({
+        //         sent: !this.state.sent
+        //     })
+        // })
+        // .catch(err => console.log('submit err', err)) 
     }
 
     recapCallback = () =>{
