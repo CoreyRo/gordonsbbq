@@ -40,8 +40,9 @@ class Contact extends Component {
                 .then(res => {
                     this.setState({
                         sent: !this.state.sent
-                    }, function(){
-                        this.confirmPost()
+                    },
+                    function(){
+                        document.getElementById('closeButton').addEventListener('close.bs.alert', this.confirmPost)
                     })
                 })
                 .catch(err => console.log('submit err', err)) 
@@ -67,8 +68,6 @@ class Contact extends Component {
         .then(res => {
             this.setState({
                 sent: !this.state.sent
-            }, function(){
-                this.confirmPost()
             })
         })
         .catch(err => console.log('submit err', err)) 
@@ -106,7 +105,7 @@ class Contact extends Component {
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title" id="contactModal">Contact Gordon's BBQ</h5>
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" onClick={this.testing} className="close" data-dismiss="modal" id='closeButton' aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
