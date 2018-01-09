@@ -42,7 +42,7 @@ class Contact extends Component {
                         sent: !this.state.sent
                     },
                     function(){
-                        document.getElementById('closeButton').addEventListener('close.bs.alert', this.confirmPost)
+                        this.confirmPost
                     })
                 })
                 .catch(err => console.log('submit err', err)) 
@@ -62,7 +62,8 @@ class Contact extends Component {
     }
 
     confirmPost = () => {
-        console.log("CONFIRMING")
+        console.log("C")
+        // document.getElementById('closeButton').addEventListener('close.bs.alert', this.confirmPost)
         // axios.post('/api/confirm',{
         //     payload: this.state
         // })
