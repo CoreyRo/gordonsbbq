@@ -16,7 +16,7 @@ const Gallery = () => {
             <div className='row mx-auto gallery-div'>
                 <div className='col-md-12 '>
                     <div className='row gallery-div-sm'>
-                        <div className='col-md-3 col-6 mx-auto'>
+                        <div className='col-md-3 col-6 pic-div mx-auto'>
                             <a href="https://www.instagram.com/p/BUNn83hhSh2/?taken-by=gordonsbbq">
                                 <div className="card" >
                                     <img className="card-img-top" src="../public/imgs/burger.jpg" alt="instagram pic" />
@@ -31,7 +31,7 @@ const Gallery = () => {
                             </a>
                         </div>
 
-                        <div className='col-md-3 col-6'>
+                        <div className='col-md-3 col-6 pic-div'>
                             <a href="https://www.instagram.com/p/BVbpSb5hs2z/?taken-by=gordonsbbq">
                                 <div className="card" >
                                     <img className="card-img-top" src="../public/imgs/chicken1.jpg" alt="instagram pic" />
@@ -46,7 +46,7 @@ const Gallery = () => {
                             </a>
                         </div>
 
-                        <div className='col-md-3 col-6'>
+                        <div className='col-md-3 col-6 pic-div'>
                             <a href="https://www.instagram.com/p/BWTmPk9BWDL/?taken-by=gordonsbbq">
                                 <div className="card" >
                                     <img className="card-img-top" src="../public/imgs/steak.jpg" alt="instagram pic" />
@@ -61,7 +61,7 @@ const Gallery = () => {
                             </a>
                         </div>
 
-                        <div className='col-md-3 col-6'>
+                        <div className='col-md-3 col-6 pic-div'>
                             <a href="https://www.instagram.com/p/sTKqznol5A/?taken-by=gordonsbbq">
                                 <div className="card" >
                                     <img className="card-img-top" src="../public/imgs/beefribs.jpg" alt="instagram pic" />
@@ -76,7 +76,7 @@ const Gallery = () => {
                             </a>
                         </div>
 
-                        <div className='col-md-3 col-6'>
+                        <div className='col-md-3 col-6 pic-div'>
                             <a href="https://www.instagram.com/p/BdjG4f9hGtn/?taken-by=gordonsbbq">
                                 <div className="card" >
                                     <img className="card-img-top" src="../public/imgs/lobster.jpg" alt="instagram pic" />
@@ -91,7 +91,7 @@ const Gallery = () => {
                             </a>
                         </div>
 
-                        <div className='col-md-3 col-6'>
+                        <div className='col-md-3 col-6 pic-div'>
                             <a href="https://www.instagram.com/p/BZAVedwBH5l/?taken-by=gordonsbbq">
                                 <div className="card" >
                                     <img className="card-img-top" src="../public/imgs/ribs.jpg" alt="instagram pic" />
@@ -106,7 +106,7 @@ const Gallery = () => {
                             </a>
                         </div>
 
-                        <div className='col-md-3 col-6'>
+                        <div className='col-md-3 col-6 pic-div'>
                             <a href="https://www.instagram.com/p/BZ4ExRXhR0t/?taken-by=gordonsbbq">
                                 <div className="card" >
                                     <img className="card-img-top" src="../public/imgs/bactaco.jpg" alt="instagram pic" />
@@ -121,7 +121,7 @@ const Gallery = () => {
                             </a>
                         </div>
 
-                        <div className='col-md-3 col-6'>
+                        <div className='col-md-3 col-6 pic-div'>
                             <a href="https://www.instagram.com/p/BSXBS3shXIz/?taken-by=gordonsbbq">
                                 <div className="card" >
                                     <img className="card-img-top" src="../public/imgs/chicken2.jpg" alt="instagram pic" />
@@ -134,11 +134,16 @@ const Gallery = () => {
                                     </div>
                                 </div>
                             </a>
-                        </div>                                         
+                        </div>
+                        <div className='follow-me'>
+                        <h5 className='follow-me-text'>Follow <a href="https://www.instagram.com/gordonsbbq/" rel="noopener noreferrer" target="_blank">@GordonsBBQ</a> on Instagram for more</h5>     
+                        </div>                                    
                     </div>              
-                    <h5 className='follow-me'>Follow <a href="https://www.instagram.com/gordonsbbq/" rel="noopener noreferrer" target="_blank">@GordonsBBQ</a> on Instagram for more</h5>
+                   
                 </div>
+
             </div>
+
         </div>
 
 

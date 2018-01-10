@@ -15,8 +15,9 @@
 }
 
 .follow-me{
-    margin: -30px 0px 0 5px;
-    padding: 0 0 0 0;
+    margin: -25px 0 0px 20px;
+    padding: 0px 0 0 0 !important;
+    z-index: 2;
 }
 
 .gallery-h1{
@@ -56,15 +57,29 @@
         display: none !important;
     }
 
-    .card-body, .card{
+    .card-body{
         padding: 0px !important;
-        margin-bottom: 15px !important;
+        margin-bottom: 0 !important;
     } 
 
+    card{
+        padding: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .pic-div{
+        margin-bottom: -30px !important;
+    }
+
     .follow-me{
-        margin: 10px 0px 0 0px;
+        margin: 0px 0px 0 0px;
         padding: 0 0 0 0;
-        font-size: 14pt;
+        font-size: 14pt !important;
+    }
+
+    .follow-me-text{
+        margin: 0px 0px 0 15px;
+        font-size: 14pt !important;
     }
 
     .gallery-h1{

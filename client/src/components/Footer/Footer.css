@@ -56,10 +56,6 @@
     padding: 50px 0 50px 0;
 }
 
-#regEmail{
-
-}
-
 #regEmailLabel{
     margin: 0 15px 0 0;
 }
@@ -68,11 +64,13 @@
     padding: 20px 0 10px 0;
     margin: -5px 0 15px 0 !important;
 }
+
 .soc-media-icon{
     width: 100px;
     padding: 5px;
     margin: 0 5px 0 5px;
 }
+
 .soc-media-title{
     color: rgb(184, 184, 184);
     margin:15px 0 10px 0;
@@ -81,12 +79,15 @@
     width: 50%;
     
 }
+
 .follow-text{
     margin-top: -50px !important;
 }
+
 .soc-media-div{
     height: 150px;
 }
+
 .footerBot{
     font-size: 10pt;
     color: #FFFFFF;
