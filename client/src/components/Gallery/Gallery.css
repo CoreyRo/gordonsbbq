@@ -14,12 +14,28 @@
     margin: 0 5px 0 5px;
 }
 
+.follow-me{
+    margin: -30px 0px 0 5px;
+    padding: 0 0 0 0;
+}
+
+.gallery-h1{
+    border-bottom: 2px solid #000;
+}
+
 .soc-icon-header{
     width: 80px;
     height: 80px;
     margin: 0 25px 10px 0;
 }
 
+.soc-icon-header-G{
+    width: 80px;
+    height: 80px;
+    margin: 0 25px 10px 0;
+    box-shadow: 2px 2px 2px;
+    border-radius: 100%;
+}
 
 .gallery-div{
     background-color: rgb(238, 238, 238);
@@ -31,15 +47,42 @@
 @media screen and (max-width: 767px)  {
     .gallery-div-sm{
         position: relative !important;
-        overflow: scroll;
-        height: 20rem;    
-        padding-top: 30px !important;
+        /* overflow: scroll;
+        height: 20rem;     */
+        padding-top: 5px !important;
         margin-top: 0px;    
+    }
+    .soc-icon, .card-text, .card-title{
+        display: none !important;
+    }
+
+    .card-body, .card{
+        padding: 0px !important;
+        margin-bottom: 15px !important;
+    } 
+
+    .follow-me{
+        margin: 10px 0px 0 0px;
+        padding: 0 0 0 0;
+        font-size: 14pt;
+    }
+
+    .gallery-h1{
+        border-bottom: 2px solid #000;
+        font-size: 16pt;
     }
 
     .soc-icon-header{
-        width: 50px;
-        height: 50px;
-        margin: 0 25px 10px 0;
+        width: 45px;
+        height: 45px;
+        margin: 0 5px 5px 0;
+    }
+
+    .soc-icon-header-G{
+        width: 45px;
+        height: 45px;
+        margin: 0 5px 5px 0;
+        box-shadow: 2px 2px 2px;
+        border-radius: 100%;
     }
 }

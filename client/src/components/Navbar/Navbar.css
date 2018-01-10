@@ -1,12 +1,31 @@
 .brand-image{
-    height: 55px;
+    display: none;
+}
+
+.brand-text-link {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.list-group{
+    border-bottom: none !important;
+}
+
+.brand-text{
+    margin: 0 0 0 0 !important;
+    color: #FFF;
+    font-family: 'Frijole', cursive;
 }
 
 .bg-dark{
     opacity: 0.96;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+.navbar{
+    padding: 0 !important;
+}
+
+.nav-link.active, .nav-link.show, .navbar-nav .show>.nav-link{
     color: rgb(0, 0, 0) !important;
     font-weight: bold;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d3d3d3+0,a3a3a3+100 */
@@ -70,10 +89,8 @@
     background-color: transparent;
     text-align: center;
     border-bottom: 1px solid rgb(41, 41, 41) !important;
-    position: relative;
-    bottom: 0 !important;
     font-size: 16pt;
-    padding: 0px 0px 5px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .brand-pos{
@@ -107,6 +124,10 @@
         padding: 5px 0 5px 0;
     }
 
+    .brand-text{
+        display: none;
+    }
+
     .nav-pos {
         padding: 0 0 0 0 !important;
         margin: 0 0 15px 0 !important;
@@ -121,7 +142,8 @@
     }
 
     .brand-image{
-        height: 50px;
+        height: 60px;
+        display: block;
     }
     
 }

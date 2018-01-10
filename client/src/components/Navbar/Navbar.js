@@ -7,7 +7,8 @@ const Navbar = () => {
     return(
         <nav className="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
             <div className='container-fluid '>
-            <a href="#home">
+            <a className='brand-text-link' href="#home">
+                <h3 className='brand-text'>Gordon's BBQ</h3>
                 <img className='img-fluid brand-image brand-pos' src={'../public/imgs/gbbq1.png'} alt='gordonsbbq logo'/>
             </a>
                 

@@ -4,75 +4,79 @@
     border-radius: 4px;
 }
 
+.about-span{
+    border-bottom: 1px solid #000;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
 .about-h1{
     border-bottom: 2px solid #000;
 }
 
 .about-div{
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(245, 245, 245);
     padding: 20px 10px 20px 10px;
-    border-radius: 15px;
+    border-radius: 8px;
+    font-family: 'Reem Kufi', sans-serif;
+    /* font-family: 'Bowlby One SC', cursive;
+    font-family: 'Hammersmith One', sans-serif; */
 }
 .about-div-2{
     border-top: 2px solid #555;
-    padding-top: 50px;
-    margin-top: 50px !important;
+    padding-top: 30px;
+    margin-top: 30px !important;
 }
 
-
 .about-text-div-1{
-    text-indent: 3rem;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .about-text-div-2{
     font-size: 14pt;
-    text-indent: 3rem;
-}
 
-.about-text-div-3{
-    font-size: 14pt;
-    text-indent: 3rem;
 }
 
 @media screen and (max-width: 767px)  {
     .about-text-div{
         position: relative !important;
-        overflow: scroll;
-        height: 28rem;    
+        /* overflow: scroll;
+        height: 27rem;     */
         padding-top: 30px !important;
         margin-top: 0px;     
     }
 
-    .about-text-div-1{
-        text-indent: 2rem;
-        font-size: 12pt;
+    .about-h1{
+        border-bottom: 2px solid #000;
+        font-size: 24pt;
+        margin-bottom: ;
     }
     
-    .about-text-div-2{
-        font-size: 12pt;
-        text-indent: 2rem;
+    .about-span{
+        border-bottom: 1px solid #000;
+        font-size: 16pt;
+        font-weight: bold;
     }
 
     .about{
-        padding-bottom: 20px !important;
+        padding-bottom: 0px !important;
     }
 
     .about-div-2{
         border-top: 2px solid #555;
         padding-top: 15px;
+        margin-top: 5px !important;
     }
-    .about-pic-div-1{
+    .about-pic-div-2{
         border-top: 1px solid #999;
         padding-top: 15px;
         margin-top: -10px;
     }
 
-    .about-pic-div-2{
-        border-bottom: 1px solid #999;
-        padding-bottom: 15px;
-        margin-bottom: 5px;
+    .about-pic-div-1{
+        border-bottom: 1px solid #999 !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 5px !important;
     }       
-
 
 }

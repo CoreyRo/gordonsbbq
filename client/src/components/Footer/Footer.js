@@ -20,6 +20,9 @@ class Footer extends Component {
             [name]: value
         })
     }
+    handleClick = (e) => {
+        e.preventDefault()
+    }
 
     handleSubmit = (event) =>
     {
@@ -36,41 +39,61 @@ class Footer extends Component {
                 <div className='row'>
                     <div className="footerTop col-sm-12">
                         <form className="form-inline">
-                            <div className="form-group mx-auto">
-                                
+                            <div className="form-group mx-auto">    
                                 <h2 className='Contact'>Contact Gordon's BBQ</h2>
-                                <input type="email" value={this.state.regEmail} className="form-control" name="regEmail" id="regEmail"
-                                    onChange={this.handleInputChange} placeholder="enter your email" required />
-                                <button type="submit" className="btn btn-primary" onClick={this.handleSubmit} id="regEmail-submit">
-                                    Submit
-                                </button>
+                                <button className="nav-link footer-btn text-center mx-auto" href="#contactForm" onClick={this.handleClick} data-toggle="modal" data-target="#contactForm">Contact <span className="sr-only">(current)</span></button>
                             </div>
                         </form>
                     </div>
                 </div>
 
                 <div className='row'>
-                    <div className="footerBot col-sm-12 text-center mx-auto">
-                        <div className='soc-media-links'>
+                    <div className="footerBot mx-auto col-sm-12">
+                        <div className='container'>
+                            <div className='row soc-media-links'>
+                            
+                                <div className='col-3'>
+                                <div className='soc-media-div'>
+                                <a href="https://www.instagram.com/gordonsbbq/" rel="noopener noreferrer" target="_blank">
+                                <img className="soc-media-icon img-fluid" alt="insta logo" src="../public/imgs/instalogo.png" />
+                                </a>
+                                </div>
+                                <p className='follow-text'> Follow me on Instagram </p>
+                                </div>
 
-                            <h5 className="mx-auto soc-media-title">Social Media Links</h5>
+                                <div className='col-3'>
+                                <div className='soc-media-div'>
+                                <a href="https://www.facebook.com/gordonsbarbecue/" rel="noopener noreferrer" target="_blank">
+                                <img className="soc-media-icon img-fluid" alt="github logo" src="../public/imgs/fblogo.png" />
+                                </a>
+                                </div>
+                                <p className='follow-text'> Like me on Facebook </p>
+                                </div>
 
-                            <a href="https://www.instagram.com/gordonsbbq/" rel="noopener noreferrer" target="_blank">
-                            <img className="soc-media-icon img-fluid" alt="insta logo" src="../public/imgs/instalogo.png" />
-                            </a>
+                                <div className='col-3'>
+                                <div className='soc-media-div'>
+                                <a href="https://www.youtube.com/user/Nhoddus/featured" rel="noopener noreferrer" target="_blank">
+                                <img className="soc-media-icon img-fluid" alt="github logo" src="../public/imgs/ytlogo.png" />
+                                </a>
+                                </div>
+                                <p className='follow-text'> Subscribe on Youtube </p>
+                                </div>
 
-                            <a href="https://www.facebook.com/gordonsbarbecue/" rel="noopener noreferrer" target="_blank">
-                            <img className="soc-media-icon img-fluid" alt="github logo" src="../public/imgs/fblogo.png" />
-                            </a>
+                                <div className='col-3'>
+                                <div className='soc-media-div'>
+                                    <a href="https://www.twitch.tv/nhoddus" rel="noopener noreferrer" target="_blank">
+                                    <img className="soc-media-icon img-fluid" alt="github logo" src="../public/imgs/twitchlogo.png" />
+                                    </a>
+                                    </div>
+                                    <p className='follow-text'> Follow me on twitch </p>
+                                </div>
 
-                            <a href="https://www.youtube.com/user/Nhoddus/featured" rel="noopener noreferrer" target="_blank">
-                            <img className="soc-media-icon img-fluid" alt="github logo" src="../public/imgs/ytlogo.png" />
-                            </a>
-
-                            <a href="https://www.twitch.tv/nhoddus" rel="noopener noreferrer" target="_blank">
-                            <img className="soc-media-icon img-fluid" alt="github logo" src="../public/imgs/twitchlogo.png" />
-                            </a>
-
+                            </div>
+                            <div className='footer-info'>
+                                <p className='footer-info-text'>Gordon Branchaud</p>
+                                <p className='footer-info-text'>example@email.com</p>
+                                <p className='footer-info-text'>Copyright 2018</p>
+                            </div>
                         </div>
                     </div>
                 </div>

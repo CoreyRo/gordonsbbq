@@ -1,20 +1,22 @@
  .carousel-div {
     position: sticky !important;
     margin-top: -400px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     width: 100%;
-    height: 725px;
+    height: 600px;
     bottom: 0px;
     left: 0;
     z-index: 2;
     overflow: hidden;
+    border-bottom: 4px solid rgb(68, 68, 68);
 }
+
 
 @media screen and (max-width: 767px)  {
     .carousel-div {
         position: sticky !important;
         margin-top: -400px;
-        margin-bottom: 75px;
+        margin-bottom: 25px;
         width: 100%;
         height: 450px !important;
         bottom: 0px;

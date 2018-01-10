@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -18,10 +22,14 @@
   font-size: large;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Archivo Black', sans-serif;
+}
+
 .container-fluid {
   width: 100%;
-  padding-right: 2%;
-  padding-left: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -35,4 +43,16 @@ label {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 767px)  {
+
+  .container-fluid {
+    width: 100%;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
 }
