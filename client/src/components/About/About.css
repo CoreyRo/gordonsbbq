@@ -14,6 +14,11 @@
     border-bottom: 2px solid #000;
 }
 
+.about-text{
+    text-indent: 1.4rem;
+    margin-bottom: 0px !important;
+    margin-top: 15px;
+}
 .about-div{
     background-color: rgb(245, 245, 245);
     padding: 20px 10px 20px 10px;
@@ -40,8 +45,8 @@
 @media screen and (max-width: 767px)  {
     .about-text-div{
         position: relative !important;
-        /* overflow: scroll;
-        height: 27rem;     */
+        overflow: scroll;
+        height: 35rem;    
         padding-top: 30px !important;
         margin-top: 0px;     
     }
@@ -65,12 +70,13 @@
     .about-div-2{
         border-top: 2px solid #555;
         padding-top: 15px;
-        margin-top: 5px !important;
+        margin-top: 15px !important;
+        padding-bottom: 15px !important;
+
     }
     .about-pic-div-2{
         border-top: 1px solid #999;
-        padding-top: 15px;
-        margin-top: -10px;
+        padding-top: 10px;
     }
 
     .about-pic-div-1{

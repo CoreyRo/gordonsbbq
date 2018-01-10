@@ -43,7 +43,6 @@ class About extends Component {
                                     </div>
 
                                 </div>
-
                                 <div className='row about-div-2'>
 
                                     <div className='col-md-8 about-text-div-2'>

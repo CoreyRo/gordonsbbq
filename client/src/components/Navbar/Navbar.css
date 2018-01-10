@@ -145,5 +145,10 @@
         height: 60px;
         display: block;
     }
+
+    .navbar-expand-md{
+        padding-right: 5% !important;
+        padding-left: 3% !important;
+    }
     
 }
