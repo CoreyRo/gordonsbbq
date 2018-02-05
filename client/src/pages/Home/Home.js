@@ -17,34 +17,18 @@ class Home extends Component {
         return(
             
             <div >
-                
-                
-
-            <div className='container-fluid'>
-            
-                <div className='row container-fluid mx-auto'>
-                    
-                    <div className='col-md-12'>
-                        <About />
-                    </div>
+                <div className='about-container'>
+                    <About />
                 </div>
-
-                <div className='seperator mx-auto'>
-                </div>
-                <div className='row container-fluid mx-auto'>
-                    <div className='col-md-12 '>
-                        <Gallery />
-                    </div>
-                </div>
-
-                <div className='seperator mx-auto'>
+                <div className='gallery-container'>
+                    <Gallery />
                 </div>
                 <div className='row container-fluid mx-auto'>
                     <div className='col-md-12 '>
                         <Contact />
                     </div>
                 </div>
-            </div>
+
 
             </div>
 

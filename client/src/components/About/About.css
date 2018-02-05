@@ -1,17 +1,24 @@
 
 .gordon-pic{
-    box-shadow: 2px 2px 4px 1px rgb(87, 87, 87);
-    border-radius: 4px;
+
 }
 
-.about-span{
-    border-bottom: 1px solid #000;
-    font-size: 18pt;
-    font-weight: bold;
+.about-header{
+    border-left: 2px solid rgb(26, 26, 26);;
+    padding: 5px 0px 0px 10px !important;
+    margin: 0px 0px 0px 0px !important;
 }
 
-.about-h1{
-    border-bottom: 2px solid #000;
+.about-header .headerA{
+    color: rgb(26, 26, 26);
+    padding: 0px 0px 0px 0px !important;
+    margin: 0 0 0 0 !important;
+}
+
+.about-header .headerB{
+    color: rgb(146, 0, 0);
+    padding: 0px 0px 0px 0px !important;
+    margin: 0 0 -20px 0 !important;
 }
 
 .about-text{
@@ -19,70 +26,24 @@
     margin-bottom: 0px !important;
     margin-top: 15px;
 }
+
 .about-div{
-    background-color: rgb(245, 245, 245);
-    padding: 20px 10px 20px 10px;
-    border-radius: 8px;
+
     font-family: 'Reem Kufi', sans-serif;
     /* font-family: 'Bowlby One SC', cursive;
     font-family: 'Hammersmith One', sans-serif; */
 }
-.about-div-2{
-    border-top: 2px solid #555;
-    padding-top: 30px;
-    margin-top: 30px !important;
+
+.about-div p{
+    font-size: 12pt;
+    color: rgb(26, 26, 26);
 }
 
-.about-text-div-1{
-    font-size: 14pt;
+.about-div h5{
+    color: #FFF;
 }
 
-.about-text-div-2{
-    font-size: 14pt;
-
-}
 
 @media screen and (max-width: 767px)  {
-    .about-text-div{
-        position: relative !important;
-        overflow: scroll;
-        height: 35rem;    
-        padding-top: 30px !important;
-        margin-top: 0px;     
-    }
-
-    .about-h1{
-        border-bottom: 2px solid #000;
-        font-size: 24pt;
-        margin-bottom: ;
-    }
-    
-    .about-span{
-        border-bottom: 1px solid #000;
-        font-size: 16pt;
-        font-weight: bold;
-    }
-
-    .about{
-        padding-bottom: 0px !important;
-    }
-
-    .about-div-2{
-        border-top: 2px solid #555;
-        padding-top: 15px;
-        margin-top: 15px !important;
-        padding-bottom: 15px !important;
-
-    }
-    .about-pic-div-2{
-        border-top: 1px solid #999;
-        padding-top: 10px;
-    }
-
-    .about-pic-div-1{
-        border-bottom: 1px solid #999 !important;
-        padding-bottom: 0px !important;
-        margin-bottom: 5px !important;
-    }       
-
+   
 }

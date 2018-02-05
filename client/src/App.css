@@ -1,16 +1,36 @@
+html,body
+{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+	-webkit-box-sizing: border-box !important; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box !important;    /* Firefox, other Gecko */
+    box-sizing: border-box !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
 .App {
   text-align: center;
 }
 
-body{
-  font-family: 'Roboto', sans-serif;
+.scroll-adjust {
+  padding-top: 80px;
+  margin-top: -80px;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
+.contactdiv-div{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .App-header {
   background-color: #222;
   height: 150px;
@@ -27,11 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-fluid {
-  width: 100%;
-  padding-right: 10%;
-  padding-left: 10%;
-  margin-right: auto;
-  margin-left: auto;
+
+
 }
 
 label {

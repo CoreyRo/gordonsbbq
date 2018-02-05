@@ -1,31 +1,4 @@
-.footer-btn{
-    color: rgb(0, 0, 0) !important;
-    font-weight: bold;
-    background: #acacac; /* Old Browsers */
-    background: -webkit-linear-gradient(top,#acacac,#696969); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top,#acacac,#696969); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top,#acacac,#696969); /*Fx 3.6-15*/
-    background: linear-gradient(to bottom, #acacac, #696969); /*Standard*/
-    opacity: 1 !important;
-    border:none !important;
-    border-radius: 4px;
-}
-
-.footer-btn:hover{
-    color: rgb(0, 0, 0) !important;
-    font-weight: bold;
-    background: #f0f0f0; /* Old Browsers */
-    background: -webkit-linear-gradient(top,#f0f0f0,#aaaaaa); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top,#f0f0f0,#aaaaaa); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top,#f0f0f0,#aaaaaa); /*Fx 3.6-15*/
-    background: linear-gradient(to bottom, #f0f0f0, #aaaaaa); /*Standard*/
-    opacity: 1 !important;
-    border:none !important;
-    border-radius: 4px;
-}
-
 .footer{
-    margin-top: 75px;
     color: #FFFFFF;
     text-align: center;
 }
@@ -48,12 +21,6 @@
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     font-size: 10pt;
-}
-
-.footerTop {
-    background-color: #000;
-    width: 100%;
-    padding: 50px 0 50px 0;
 }
 
 #regEmailLabel{
@@ -91,19 +58,8 @@
 .footerBot{
     font-size: 10pt;
     color: #FFFFFF;
-    /* IE10+ */ 
-    background-image: -ms-linear-gradient(top, rgb(63, 63, 63) 0%, rgb(45, 45, 45) 100%);
-    /* Mozilla Firefox */ 
-    background-image: -moz-linear-gradient(top, rgb(63, 63, 63) 0%, rgb(45, 45, 45) 100%);
-    /* Opera */ 
-    background-image: -o-linear-gradient(top, rgb(63, 63, 63) 0%, rgb(45, 45, 45) 100%);
-    /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(63, 63, 63)), color-stop(100, rgb(45, 45, 45)));
-    /* Webkit (Chrome 11+) */ 
-    background-image: -webkit-linear-gradient(top, rgb(63, 63, 63) 0%, rgb(45, 45, 45) 100%);
-    /* W3C Markup */ 
-    background-image: linear-gradient(to bottom, rgb(63, 63, 63) 0%, rgb(45, 45, 45) 100%);
-    padding: 0 0 0 0px;
+    background-color: #000;
+    padding: 50px 0 0 0px;
     margin: 0 0 0 0;
     width: 100%;
 }

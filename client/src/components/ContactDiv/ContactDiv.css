@@ -1,0 +1,72 @@
+
+ul, ol{
+	padding: 0 ;
+}
+
+
+#ContactDiv-first-row .fa-check{
+	margin-right: 15px;
+	color: #ff0000;
+}
+
+.checklist li{
+    margin: 0;
+	list-style: none;
+	font-weight: 600;
+    font-size: 16px;
+    color: #595959;
+    margin-bottom: 20px;
+}
+
+.contact-checklist li{
+	font-weight: 600;
+    font-size: 16px;
+    color: #595959;
+    margin-bottom: 20px;
+    margin: 0;
+    list-style: none;
+    line-height: 45px;
+}
+
+.fa-fire{
+    margin-right: 15px;
+	color: #ff0000;
+}
+
+#charcoal{
+    color: rgb(161, 0, 0);
+}
+
+.know-btn{
+	background-color: #d30000 !important;
+	font-family: 'Arial', 'sans-serrif' !important;
+	color: #FFFFFF;
+	font-size: 12pt;
+}
+
+.know-btn:hover{
+	background-color: #860101 !important;
+	font-family: 'Arial', 'sans-serrif' !important;
+	color: #FFFFFF;
+	font-size: 12pt;
+}
+
+
+@media screen and (max-width: 767px)  {
+	.contact-text p{
+		margin-bottom: 15px;
+	}
+	
+	.checklist{
+		list-style: none;
+	}
+
+	
+	.checklist, .contact-checklist li{
+		font-weight: 600;
+		font-size: 15px;
+		color: #595959;
+	
+	}
+	
+}

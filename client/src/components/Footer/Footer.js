@@ -37,17 +37,6 @@ class Footer extends Component {
         return (
             <footer className="footer col-sm-12">
                 <div className='row'>
-                    <div className="footerTop col-sm-12">
-                        <form className="form-inline">
-                            <div className="form-group mx-auto">    
-                                <h2 className='Contact'>Contact Gordon's BBQ</h2>
-                                <button className="nav-link footer-btn text-center mx-auto" href="#contactForm" onClick={this.handleClick} data-toggle="modal" data-target="#contactForm">Contact <span className="sr-only">(current)</span></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div className='row'>
                     <div className="footerBot mx-auto col-sm-12">
                         <div className='container'>
                             <div className='row soc-media-links'>

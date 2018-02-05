@@ -1,17 +1,49 @@
 .card-text{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 10pt;
+    color: rgb(77, 77, 77);
 }
 .card{
-    margin: 0px 0px 50px 0;
+    margin: 0px 0px 0px 0;
+    background-color: #000;
+    text-align: center;
 }
-
+.gallery-container .container{
+    min-height: 0;
+    min-width: 0;
+}
 .soc-icon{
     width: 50px;
     height: 50px;
     padding: 5px;
     margin: 0 5px 0 5px;
+}
+.slick-slide{
+
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 35px !important;
+    line-height: 1;
+    opacity: .75;
+    color: #fff;
+}
+
+.slick-prev {
+    left: -45px !important;
+}
+.slick-next {
+    right: -30px !important;
+}
+
+.slick-dots li button:before {
+    color: #FFF !important;
+    font-size: 18px !important;
+    top: 10px !important;
+}
+
+
+.slick-dots li.slick-active button:before {
+    color: #ff0000 !important;
 }
 
 .follow-me{
@@ -39,20 +71,11 @@
 }
 
 .gallery-div{
-    background-color: rgb(238, 238, 238);
-    padding: 15px 5px 15px 5px !important;
-    margin: 0 -15px 0 -15px !important;
-    border-radius: 15px;
+
 }
 
 @media screen and (max-width: 767px)  {
-    .gallery-div-sm{
-        position: relative !important;
-        /* overflow: scroll;
-        height: 20rem;     */
-        padding-top: 5px !important;
-        margin-top: 0px;    
-    }
+
     .soc-icon, .card-text, .card-title{
         display: none !important;
     }
@@ -67,37 +90,4 @@
         margin-bottom: 0px !important;
     }
 
-    .pic-div{
-        margin-bottom: -30px !important;
-    }
-
-    .follow-me{
-        margin: 0px 0px 0 0px;
-        padding: 0 0 0 0;
-        font-size: 14pt !important;
-    }
-
-    .follow-me-text{
-        margin: 0px 0px 0 15px;
-        font-size: 14pt !important;
-    }
-
-    .gallery-h1{
-        border-bottom: 2px solid #000;
-        font-size: 16pt;
-    }
-
-    .soc-icon-header{
-        width: 45px;
-        height: 45px;
-        margin: 0 5px 5px 0;
-    }
-
-    .soc-icon-header-G{
-        width: 45px;
-        height: 45px;
-        margin: 0 5px 5px 0;
-        box-shadow: 2px 2px 2px;
-        border-radius: 100%;
-    }
 }
