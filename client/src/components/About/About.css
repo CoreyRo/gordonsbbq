@@ -43,7 +43,25 @@
     color: #FFF;
 }
 
+.desktop-pic{
+    display: block !important;
+}
+.mobile-pic{
+    display: none !important;
+}
+
 
 @media screen and (max-width: 767px)  {
+    .desktop-pic{
+        display: none !important;
+    }
+    .mobile-pic{
+        display: block !important;
+    }
+
+    .mobile-pic .about-header{
+        margin-bottom: 15px !important;
+    }
+    
    
 }

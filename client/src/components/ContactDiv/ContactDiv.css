@@ -51,22 +51,102 @@ ul, ol{
 	font-size: 12pt;
 }
 
+.checklist li{
+    font-size: 12pt;
+    color: #595959;
+    margin: 0 !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+
+}
+
+.contact-checklist li{
+    font-size: 12pt;
+    color: #595959;
+    margin: 0 0 0 0 !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+
+}
+
+.contact-checklist p {
+    padding-left:5px !important; /* adjust it to your custom font needings */
+    padding-right:5px !important;
+    position:relative;
+    margin-top: -30px !important;
+    left:18px; /* adjust it to your custom font needings */
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    line-height: 20px !important;
+}
+
+.checklist p {
+    padding-left:5px !important; /* adjust it to your custom font needings */
+    padding-right:5px !important;
+    position:relative;
+    margin-top: -25px !important;
+    left:18px; /* adjust it to your custom font needings */
+}
+
 
 @media screen and (max-width: 767px)  {
 	.contact-text p{
 		margin-bottom: 15px;
 	}
 	
-	.checklist{
-		list-style: none;
+	.checklist, .contact-checklist{
+        list-style: none;
+
 	}
 
-	
-	.checklist, .contact-checklist li{
-		font-weight: 600;
-		font-size: 15px;
-		color: #595959;
-	
+    .fa-check, .fa-fire{
+		font-size: 12pt;
+
 	}
+	.checklist li{
+		font-size: 12pt;
+        color: #595959;
+        margin: 0 !important;
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+
+    }
+
+    .contact-checklist li{
+		font-size: 12pt;
+        color: #595959;
+        margin: 0 0 0 0 !important;
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+  
+    }
+
+    .contact-checklist p {
+        padding-left:5px !important; /* adjust it to your custom font needings */
+        padding-right:5px !important;
+        position:relative;
+        margin-top: -30px !important;
+        left:18px; /* adjust it to your custom font needings */
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+        line-height: 20px !important;
+    }
+
+    .checklist p {
+        padding-left:5px !important; /* adjust it to your custom font needings */
+        padding-right:5px !important;
+        position:relative;
+        margin-top: -25px !important;
+        left:18px; /* adjust it to your custom font needings */
+    }
+
+    
+
+
+
+
+
+	
+
 	
 }

@@ -18,15 +18,15 @@ const ContactDiv = (props) => {
                                         <ul className='contact-checklist'>
                                         <li>
                                         <i class="fas fa-fire"></i>
-                                        100% <span id='charcoal'>Charcoal </span>Grilled
+                                        <p>100% <span id='charcoal'>Charcoal </span>Grilled</p>
                                         </li>
                                         <li>
                                         <i class="fas fa-fire"></i>
-                                       Handcrafted Sauces
+                                        <p>Handcrafted Sauces</p>
                                         </li>
                                         <li>
                                         <i class="fas fa-fire"></i>
-                                        Homemade Spice Blends
+                                        <p>Homemade Spice Blends</p>
                                         </li>
                                         </ul>
                                     </div>
@@ -34,15 +34,15 @@ const ContactDiv = (props) => {
                                     <ul className='contact-checklist'>
                                     <li>
                                     <i class="fas fa-fire"></i>
-                                    Smoked to perfection
+                                    <p>Smoked to perfection</p>
                                     </li>
                                     <li>
                                     <i class="fas fa-fire"></i>
-                                    No Shortcuts
+                                    <p>No Shortcuts</p>
                                     </li>
                                     <li>
                                     <i class="fas fa-fire"></i>
-                                    Low 'n Slow
+                                    <p>Low 'n Slow</p>
                                     </li>
                                     </ul>
                                     </div>
@@ -63,11 +63,11 @@ const ContactDiv = (props) => {
                                         <ul className='checklist'>
                                             <li>
                                                 <i class="fas fa-check"/>
-                                                Catering
+                                                <p>Catering</p>
                                             </li>
                                             <li>
                                                 <i class="fas fa-check"/>
-                                                Private Cookouts
+                                                <p>Private Cookouts</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -75,11 +75,11 @@ const ContactDiv = (props) => {
                                         <ul className='checklist'>
                                             <li>
                                                 <i class="fas fa-check"/>
-                                                Parties
+                                                <p>Parties</p>
                                             </li>
                                             <li>
                                                 <i class="fas fa-check"/>
-                                                Events
+                                                <p>Events</p>
                                             </li>
                                         </ul>
                                     </div>

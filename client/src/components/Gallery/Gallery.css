@@ -76,9 +76,7 @@
 
 @media screen and (max-width: 767px)  {
 
-    .soc-icon, .card-text, .card-title{
-        display: none !important;
-    }
+
 
     .card-body{
         padding: 0px !important;

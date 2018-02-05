@@ -19,6 +19,7 @@ class CarouselComponent extends Component {
             slidesToScroll: 1,
             accessibility: false,
             className: 'carousel-div'
+            
             }
         return (   
             <div >
