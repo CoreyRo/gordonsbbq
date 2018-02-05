@@ -5364,9 +5364,9 @@ react-overlays@^0.7.4:
     prop-types-extra "^1.0.1"
     warning "^3.0.0"
 
-react-responsive-carousel@^3.1.30:
-  version "3.1.30"
-  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.30.tgz#bc6225a5588a18f1c7ca206a8578aac11cffca38"
+react-responsive-carousel@^3.1.33:
+  version "3.1.33"
+  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.33.tgz#702d51a890e2524fa3157267a31f4b3fc215752c"
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.5.8"

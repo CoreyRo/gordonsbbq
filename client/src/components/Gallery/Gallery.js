@@ -1,6 +1,8 @@
 import React from 'react'
+import { Carousel } from 'react-responsive-carousel'
 import Slider from 'react-slick'
 import './Gallery.css'
+
 
 const Gallery = () => {
     const settings = {
