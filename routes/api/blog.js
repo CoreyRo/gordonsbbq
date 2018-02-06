@@ -5,11 +5,23 @@
 // *** Dependencies
 // ==============================================================================
 const router = require("express").Router()
-const api = require("../controllers/apiController.js")
+const blog = require("../../controller/blogController.js")
 
 // api routes
     router
-        .route('/contact')
-        .post(api.sendMail)
+        .route('/create')
+        .post(blog.create)
+
+    router
+        .route('/read')
+        .get(blog.findAll)
+
+    router
+        .route('/update:?')
+        .post(blog.update)
+
+    router
+        .route('/remove:?')
+        .post(blog.destroy)
 
 module.exports = router

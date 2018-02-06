@@ -1,0 +1,102 @@
+.blog-container{
+
+}
+
+.blog-box{
+    background-color: #000000;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    color: rgb(199, 199, 199);
+
+}
+
+.blog-header{
+    border-left: 2px solid rgb(26, 26, 26);;
+    padding: 5px 0px 0px 10px !important;
+    margin: 0px 0px 0px 0px !important;
+}
+.top-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.blog-header .headerA{
+    color: rgb(0, 0, 0);
+
+    padding: 0px 0px 0px 0px !important;
+    margin: 0 0 0 0 !important;
+}
+
+.blog-header .headerB{
+
+    color: rgb(180, 0, 0);
+    padding: 0px 0px 0px 0px !important;
+    margin: 0 0 -20px 0 !important;
+}
+
+.blog-img-div{
+    margin-bottom: 10px;
+}
+
+.blog-img{
+
+}
+
+.blog-body-div{
+    border-bottom: 2px solid #222;
+}
+
+.blog-header-div{
+
+}
+
+.blog-date{
+    font-size: 14pt;
+    text-align: center;
+}
+
+.blog-title{
+    font-size: 28pt;
+}
+
+.blog-text-div{
+
+}
+
+.blog-text{
+    font-size: 12pt;
+}
+
+.btn-row{
+    padding-top: 25px;
+    border-top: 2px solid #222;
+}
+
+.btn-left{
+    text-align: right;
+}
+.btn-right{
+    text-align: left;
+}
+
+@media screen and (max-width: 767px)  {
+
+    .blog-header .headerA{
+        color: rgb(0, 0, 0);
+    }
+    
+    .blog-header .headerB{
+        font-size: 18pt;
+    }
+
+    .blog-body-div{
+        border-bottom: none;
+    }
+
+    .btn-row{
+        padding-top: 0px;
+        border-top: none;
+    }
+
+}

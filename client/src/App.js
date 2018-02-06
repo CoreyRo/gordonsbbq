@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './pages/Home'
+import Blog from './pages/Blog'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
@@ -21,13 +22,12 @@ class App extends Component {
   	render() {
 		return (
 	  		<Router>
-				<div id='home'>	
+				<div>	
 					<Navbar />
 					<Header /> 		
-					<Route path='/' component={Home} />
-					<div className='contactdiv-div'>
+					<Route exact path='/' component={Home} />
+					<Route exact path='/blog' component={Blog} />
 					<ContactDiv />
-					</div>
 					<Footer />
 				</div>
 			</Router>

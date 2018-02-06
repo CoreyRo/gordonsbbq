@@ -4,14 +4,15 @@
 // ******************************************************************************
 // *** Dependencies
 // ==============================================================================
-const router = require("express").Router()
-const apiRoutes = require("./apiRoutes")
+const path = require("path");
+const router = require("express").Router();
+const apiRoutes = require("./api");
 
 
 // // ******************************************************************************
 // // *** Setup api routes
 // // ==============================================================================
-router.use("/api", apiRoutes) //adds /api to apiRoutes
+router.use("/api", apiRoutes); //adds /api to apiRoutes
 
 
 // // ******************************************************************************

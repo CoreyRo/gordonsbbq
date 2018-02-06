@@ -5,13 +5,26 @@
 // *** Dependencies
 // ==============================================================================
 const express = require('express')
+const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const path = require('path')
 const env = require('dotenv').load()
 const morgan = require('morgan')
 const cors = require('cors')
 const app = express()
+const routes = require("./routes")
 const PORT = process.env.PORT || 3001
+
+
+// ******************************************************************************
+// *** Express app setup
+// ==============================================================================
+mongoose.Promise = global.Promise; //configure promise
+// Connect to the Mongo DB
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://127.0.0.1/gordons-bbq"
+
+);
 
 
 // ******************************************************************************
@@ -29,11 +42,12 @@ if (process.env.NODE_ENV === "production") {
 }
 
 
+
 // ******************************************************************************
 // *** Routes
 // ==============================================================================
-const routes = require("./routes")
-app.use(routes)
+
+app.use(routes);
 
 // Send every request to the React app
 // Define any API routes before this runs

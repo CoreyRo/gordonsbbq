@@ -1,8 +1,11 @@
+.contactdiv-div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 ul, ol{
 	padding: 0 ;
 }
-
 
 #ContactDiv-first-row .fa-check{
 	margin-right: 15px;

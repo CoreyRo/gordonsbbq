@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 
@@ -20,20 +21,13 @@ const Navbar = () => {
                 
                     <ul className="navbar-nav nav-tabs list-group" id="myNavBar">
                         <li className="nav-item">
-                            <a className="nav-link" id='homeLink' href="#home">Home <span className="sr-only">(current)</span></a>
+                            <Link className="nav-link" id='homeLink' to="/">Home <span className="sr-only">(current)</span></Link>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#about">About <span className="sr-only">(current)</span></a>
+                            <Link className="nav-link" to='#blog' to="/blog">Blog <span className="sr-only">(current)</span></Link>
                         </li>
 
-                        <li className="nav-item">
-                            <a className="nav-link" href="#gallery">Gallery <span className="sr-only">(current)</span></a>
-                        </li>
-
-                        <li className="nav-item">
-                        <a className="nav-link" href="#contactForm"  data-toggle="modal" data-target="#contactForm">Contact <span className="sr-only">(current)</span></a>
-                        </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" id='soc-menu' data-toggle="dropdown" href='/' role="button" aria-haspopup="true" aria-expanded="false">Social Media</a>
                             <div className="dropdown-menu">
@@ -42,7 +36,12 @@ const Navbar = () => {
                                 <a className="dropdown-item" id='yt' rel="noopener noreferrer" target='_blank' href="https://www.youtube.com/user/Nhoddus/featured">YouTube</a>
                                 <a className="dropdown-item" id='tw' rel="noopener noreferrer" target='_blank' href="https://www.twitch.tv/nhoddus">Twitch</a>
                             </div>
-                        </li>                       
+                        </li>   
+
+                        <li className="nav-item">
+                        <a className="nav-link" href="#contactForm"  data-toggle="modal" data-target="#contactForm">Contact <span className="sr-only">(current)</span></a>
+                        </li>
+                                            
                     </ul> 
                 </div>
             </div>
