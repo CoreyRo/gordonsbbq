@@ -11,17 +11,23 @@ const blog = require("../../controller/blogController.js")
     router
         .route('/create')
         .post(blog.create)
+    
+    router
+        .route('/get/:num/:limit')
+        .get(blog.findPages)
 
     router
-        .route('/read')
+        .route('/getall')
         .get(blog.findAll)
 
     router
-        .route('/update:?')
+        .route('/update/:?')
         .post(blog.update)
 
     router
-        .route('/remove:?')
+        .route('/remove/:?')
         .post(blog.destroy)
+
+        
 
 module.exports = router

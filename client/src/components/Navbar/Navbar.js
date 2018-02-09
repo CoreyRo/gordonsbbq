@@ -25,8 +25,9 @@ const Navbar = () => {
                         </li>
 
                         <li className="nav-item">
-                            <Link className="nav-link" to='#blog' to="/blog">Blog <span className="sr-only">(current)</span></Link>
+                            <Link className="nav-link" to="/blog">Blog <span className="sr-only">(current)</span></Link>
                         </li>
+                        
 
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" id='soc-menu' data-toggle="dropdown" href='/' role="button" aria-haspopup="true" aria-expanded="false">Social Media</a>

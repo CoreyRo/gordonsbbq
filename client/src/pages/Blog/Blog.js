@@ -7,28 +7,30 @@ import './Blog.css'
 class Blog extends Component {
     
     state = { 
-        posts: [],
-        pageArr: [],
+        docs: [],
+        limit: 3,
         page: 1,
-        pageCount: 0,
-        count: 0
+        pages: 0,
+        total: 0
     }
 
     componentWillMount() {
         this.getProjects()
-        
-        
     }
 
     getProjects = () => {
-        
-        let queryString = `/api/blog/read`
+        let queryString = `/api/blog/get/${this.state.page}/${this.state.limit}`
         console.log("query",queryString)
         axios.get(queryString)
             .then((res) => {
                 console.log("blog result",res.data)
+                
                 this.setState({
-                    posts: [...res.data],
+                    docs: [...res.data.docs],
+                    limit: res.data.limit,
+                    page: res.data.page,
+                    pages: res.data.pages,
+                    total: res.data.total
                 },function(){
                     console.log('state', this.state)
                 });
@@ -42,24 +44,44 @@ class Blog extends Component {
         e.preventDefault()
         this.setState({ page: this.state.page + 1 }, () => this.getProjects())
     }
+
     prevPage = (e) => {
         e.preventDefault()
         this.setState({ page: this.state.page - 1 }, () => this.getProjects())
+    }
+
+    jumpPage = (e) => {
+        e.preventDefault()
+        this.setState({ page: e.target.id.split('-')[1] }, () => this.getProjects())
+    }
+
+    showPrev = () => {
+        if (this.state.page <= this.state.pages && this.state.page > 1){
+            return (
+                <button className='btn page-btn' onClick={this.prevPage}>Prev</button>
+            )
+        }
+    }
+
+    showNext = () => {
+        if (this.state.page < this.state.pages){
+            return (
+                <button className='btn page-btn' onClick={this.nextPage}>Next</button>
+            )
+        }
     }
 
     render(){
         
         return(
             <div className='blog-container'>
-            
-
                 <div className='container top-container'>
                     <div className='blog-header'>
                         <h1 className='headerA'>BBQ Blog Spot</h1>
                         <h4 className='headerB'>Life, BBQ, and everything</h4>.
                     </div>
                 </div>
-                {this.state.posts.map(function(post,i){
+                {this.state.docs.map(function(post,i){
                     return(
                     <div className='blog-box' rel={post._id} key={i+post._id} id={`blog-post-${post._id}`}>
                         <div className='container'>
@@ -77,7 +99,11 @@ class Blog extends Component {
                                             <h3 className='blog-title' id={`blog-title-${post._id}`}>{post.title}</h3>
                                         </div>
                                         <div className='blog-text-div'>
-                                            <p className='blog-text' id={`blog-text-${post._id}`}>{post.text}</p>
+                                            {post.body.map(function(text,i){
+                                                return(
+                                                    <p className='blog-text' key={`text-${i}`} id={`blog-text-p-${i}`}>{text}</p>
+                                                )
+                                            })}
                                         </div>
                                     </div>
                                 </div>
@@ -87,13 +113,13 @@ class Blog extends Component {
                     )
                 })}
                 <div className='blog-box'>
-                    <div className='container'>
+                    <div className='container-fluid'>
                         <div className='row btn-row'>
                             <div className='col-6 btn-left'>
-                                <button className='btn page-btn' onClick={this.prevPage}>Prev</button>
+                                {this.showPrev()}                                
                             </div>
                             <div className='col-6 btn-right'>
-                                <button className='btn page-btn'onClick={this.nextPage}>Next</button>
+                                {this.showNext()}
                             </div>
                         </div>
                     </div>

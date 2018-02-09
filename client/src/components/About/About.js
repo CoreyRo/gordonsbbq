@@ -11,7 +11,18 @@ class About extends Component {
     }
 
     render (){
-
+        // const validFiles = ['.png','.gif','.jpg','.jpeg']
+        // let validateStr = (str, endings) => endings.map(function(end,i){
+        //     if (str.endsWith(end)){
+        //         console.log("TRUE",end,str)
+        //         return true
+        //     }
+        //     else{
+        //         console.log("FALSE",end,str)
+        //         return false
+        //     }
+        // })
+        // validateStr('somenewpic.jpeg',validFiles)
         return(
             <div className='container'>
                 <div className='scroll-adjust' id='about'>  

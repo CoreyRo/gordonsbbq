@@ -7,40 +7,61 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser');
 const path = require('path')
-const env = require('dotenv').load()
 const morgan = require('morgan')
 const cors = require('cors')
+const env = require('dotenv').load()
 const app = express()
 const routes = require("./routes")
 const PORT = process.env.PORT || 3001
 
-
 // ******************************************************************************
-// *** Express app setup
+// *** Mongoose Setup
 // ==============================================================================
-mongoose.Promise = global.Promise; //configure promise
+// Set up promises with mongoose
+mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://127.0.0.1/gordons-bbq"
+mongoose.connect(process.env.MONOGDB_LOCALHOST || process.env.MONGO_MLAB)
+.catch(function(err){
+    console.log('mongoose connect error:', err.message)
 
-);
+    
+})
+// When successfully connected
+mongoose.connection.on('connected', function () {  
+  console.log(`Mongoose default connection open to ${process.env.MONGODB_LOCALHOST || process.env.MONGO_MLAB}`);
+}); 
+// If the connection throws an error
+mongoose.connection.on('error',function (err) {  
+  console.log(`Mongoose default connection error: ${err}`);
+}); 
+// When the connection is disconnected
+mongoose.connection.on('disconnected', function () {  
+  console.log('Mongoose default connection disconnected'); 
+});
+// If the Node process ends, close the Mongoose connection 
+process.on('SIGINT', function() {  
+	mongoose.connection.close(function () { 
+	  console.log('Mongoose default connection disconnected through app termination'); 
+	  process.exit(0); 
+	}); 
+}); 
 
 
 // ******************************************************************************
 // *** Express app setup
 // ==============================================================================
 app.use(cors()) // must be before BodyParser
-app.use('/public', express.static('public')) // Static directory
 app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
+app.use(cookieParser());
+app.use('/public', express.static('public')) // Static directory
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
 }
-
 
 
 // ******************************************************************************
@@ -53,8 +74,7 @@ app.use(routes);
 // Define any API routes before this runs
 app.get("*", function(req, res) {
     res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
-  });
-
+});
 
 // ******************************************************************************
 // *** Server listen on PORT
