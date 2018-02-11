@@ -72,7 +72,6 @@ class Blog extends Component {
     }
 
     render(){
-        
         return(
             <div className='blog-container'>
                 <div className='container top-container'>
@@ -88,8 +87,8 @@ class Blog extends Component {
                             <div className='row'>
                                 <div className='col-md-4'>
                                     <div className='blog-img-div mx-auto text-center'>
-                                        <img className='blog-img img-fluid' id={`blog-img-${post._id}`} src={`../public/imgs/${post.img}`} alt={`img-${post.img}`}/>
-                                        <h5 className='blog-date' id={`blog-date-${post._id}`}>{moment(post.dateAdded).format(`dddd, MMMM Do YYYY h:mmA`)}</h5>
+                                        <img className='blog-img img-fluid' id={`blog-img-${post._id}`} src={`https://redivo-backend.herokuapp.com/imgs/${post.img}`} alt={`img-${post.img}`}/>
+                                        <h5 className='blog-date' id={`blog-date-${post._id}`}>{moment(post.updatedAt).format(`dddd, MMMM Do YYYY h:mmA`)}</h5>
                                     </div>
                                 </div>
                                 <div className='col-md-8'>
@@ -99,11 +98,7 @@ class Blog extends Component {
                                             <h3 className='blog-title' id={`blog-title-${post._id}`}>{post.title}</h3>
                                         </div>
                                         <div className='blog-text-div'>
-                                            {post.body.map(function(text,i){
-                                                return(
-                                                    <p className='blog-text' key={`text-${i}`} id={`blog-text-p-${i}`}>{text}</p>
-                                                )
-                                            })}
+                                            <p className='blog-text' key={`text-${i}`} id={`blog-text-p-${i}`}>{post.text}</p>
                                         </div>
                                     </div>
                                 </div>
