@@ -87,7 +87,7 @@ class Blog extends Component {
                             <div className='row'>
                                 <div className='col-md-4'>
                                     <div className='blog-img-div mx-auto text-center'>
-                                        <img className='blog-img img-fluid' id={`blog-img-${post._id}`} src={`https://gordonsbbq-backend.herokuapp.com/${post.img}`} alt={`img-${post.img}`}/>
+                                        <img className='blog-img img-fluid' id={`blog-img-${post._id}`} src={`https://gordonsbbq-backend.herokuapp.com/imgs/${post.img}`} alt={`img-${post.img}`}/>
                                         <h5 className='blog-date' id={`blog-date-${post._id}`}>{moment(post.updatedAt).format(`dddd, MMMM Do YYYY h:mmA`)}</h5>
                                     </div>
                                 </div>
