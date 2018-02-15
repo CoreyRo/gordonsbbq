@@ -70,6 +70,7 @@ class Blog extends Component {
             )
         }
     }
+    
 
     render(){
         return(
@@ -80,35 +81,38 @@ class Blog extends Component {
                         <h4 className='headerB'>Life, BBQ, and everything</h4>.
                     </div>
                 </div>
+                <div className='mid-blog' style={{backgroundImage: 'url("../public/imgs/coalsbq2.jpg")'}}>
                 {this.state.docs.map(function(post,i){
                     return(
+                    <div className='container'>
                     <div className='blog-box' rel={post._id} key={i+post._id} id={`blog-post-${post._id}`}>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-md-4'>
-                                    <div className='blog-img-div mx-auto text-center'>
-                                        <img className='blog-img img-fluid' id={`blog-img-${post._id}`} src={`https://gordonsbbq-backend.herokuapp.com/imgs/${post.img}`} alt={`img-${post.img}`}/>
-                                        <h5 className='blog-date' id={`blog-date-${post._id}`}>{moment(post.updatedAt).format(`dddd, MMMM Do YYYY h:mmA`)}</h5>
-                                    </div>
-                                </div>
                                 <div className='col-md-8'>
                                     <div className='blog-body-div mx-auto '>
                                         <div className='blog-header-div'>
-                                            
                                             <h3 className='blog-title' id={`blog-title-${post._id}`}>{post.title}</h3>
+                                            <h5 className='blog-date' id={`blog-date-${post._id}`}>{moment(post.updatedAt).format(`dddd, MMMM Do YYYY h:mmA`)}</h5>
                                         </div>
                                         <div className='blog-text-div'>
                                             <p className='blog-text' key={`text-${i}`} id={`blog-text-p-${i}`}>{post.text}</p>
                                         </div>
                                     </div>
                                 </div>
+                                <div className='col-md-4'>
+                                    <div className='blog-img-div mx-auto text-center'>
+                                        <img className='blog-img img-fluid' id={`blog-img-${post._id}`} src={`https://gordonsbbq-backend.herokuapp.com/imgs/${post.img}`} alt={`img-${post.img}`}/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    </div>
                     )
                 })}
-                <div className='blog-box'>
-                    <div className='container-fluid'>
+                </div>
+                <div className='blog-btn-box'>
+                    <div className='container'>
                         <div className='row btn-row'>
                             <div className='col-6 btn-left'>
                                 {this.showPrev()}                                
@@ -117,6 +121,7 @@ class Blog extends Component {
                                 {this.showNext()}
                             </div>
                         </div>
+                        <p>Page {this.state.page} of {this.state.pages}</p>
                     </div>
                 </div>
             </div>
