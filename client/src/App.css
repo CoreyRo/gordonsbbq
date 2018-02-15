@@ -4,12 +4,7 @@ html
     overflow-x: hidden !important;
     width: 100% !important;
     height: 100% !important;
-    margin: 0 0 0 0 !important;
-    padding: 0 0 0 0 !important;
-	  -webkit-box-sizing: border-box !important; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box !important;    /* Firefox, other Gecko */
-    box-sizing: border-box !important;
-    position: relative !important;
+
 
 }
 body{
@@ -25,8 +20,7 @@ body{
 }
 
 .scroll-adjust {
-  padding-top: 125px;
-  margin-top: -125px;
+ 
 }
 
 .App-logo {

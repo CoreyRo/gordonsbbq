@@ -88,18 +88,27 @@ class Blog extends Component {
                     <div className='blog-box' rel={post._id} key={i+post._id} id={`blog-post-${post._id}`}>
                         <div className='container'>
                             <div className='row'>
+                            <div className='blog-header-div mobile-img'>
+                                <h3 className='blog-title' id={`blog-title-${post._id}`}>{post.title}</h3>
+                                <h5 className='blog-date' id={`blog-date-${post._id}`}>{moment(post.updatedAt).format(`dddd, MMMM Do YYYY h:mmA`)}</h5>
+                            </div>
+                            <div className='col-md-4 mobile-img'>
+                                    <div className='blog-img-div mx-auto text-center'>
+                                        <img className='blog-img img-fluid' id={`blog-img-${post._id}`} src={`https://gordonsbbq-backend.herokuapp.com/imgs/${post.img}`} alt={`img-${post.img}`}/>
+                                    </div>
+                                </div>
                                 <div className='col-md-8'>
                                     <div className='blog-body-div mx-auto '>
-                                        <div className='blog-header-div'>
+                                        <div className='blog-header-div desktop-img'>
                                             <h3 className='blog-title' id={`blog-title-${post._id}`}>{post.title}</h3>
                                             <h5 className='blog-date' id={`blog-date-${post._id}`}>{moment(post.updatedAt).format(`dddd, MMMM Do YYYY h:mmA`)}</h5>
                                         </div>
                                         <div className='blog-text-div'>
-                                            <p className='blog-text' key={`text-${i}`} id={`blog-text-p-${i}`}>{post.text}</p>
+                                            <p className='blog-text' id={`blog-text-p-${i}`}>{post.text}</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-md-4'>
+                                <div className='col-md-4 desktop-img'>
                                     <div className='blog-img-div mx-auto text-center'>
                                         <img className='blog-img img-fluid' id={`blog-img-${post._id}`} src={`https://gordonsbbq-backend.herokuapp.com/imgs/${post.img}`} alt={`img-${post.img}`}/>
                                     </div>
