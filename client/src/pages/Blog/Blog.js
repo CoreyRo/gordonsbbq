@@ -32,7 +32,7 @@ class Blog extends Component {
                     pages: res.data.pages,
                     total: res.data.total
                 },function(){
-                    console.log('state', this.state)
+                    document.location.href = '#BBQ-Blog';
                 });
             })
             .catch((err) => {
@@ -74,9 +74,9 @@ class Blog extends Component {
 
     render(){
         return(
-            <div className='blog-container'>
+            <div id='BBQ-Blog' className='blog-container'>
                 <div className='container top-container'>
-                    <div className='blog-header'>
+                    <div id='blogheader' className='blog-header'>
                         <h1 className='headerA'>BBQ Blog Spot</h1>
                         <h4 className='headerB'>Life, BBQ, and everything</h4>.
                     </div>
