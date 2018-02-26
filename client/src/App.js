@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Blog from './pages/Blog'
+import Post from './pages/Post'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
@@ -26,7 +27,9 @@ class App extends Component {
 					<Navbar />
 					<Header /> 		
 					<Route exact path='/' component={Home} />
+					<Route path='/post' component={Post} />
 					<Route exact path='/blog' component={Blog} />
+					<Contact />
 					<ContactDiv />
 					<Footer />
 				</div>

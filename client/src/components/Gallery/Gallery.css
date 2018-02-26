@@ -1,8 +1,8 @@
-.card-text{
+#gallery .slick-text{
     font-size: 10pt;
     color: rgb(77, 77, 77);
 }
-.card{
+#gallery .card{
     margin: 0px 0px 0px 0;
     background-color: #000;
     text-align: center;
@@ -17,32 +17,21 @@
     padding: 5px;
     margin: 0 5px 0 5px;
 }
-.slick-slide{
+#gallery .slick-slide{
 
 }
 
-.slick-next:before, .slick-prev:before {
-    font-size: 35px !important;
-    line-height: 1;
-    opacity: .75;
-    color: #fff;
-}
 
-.slick-prev {
-    left: -45px !important;
-}
-.slick-next {
-    right: -30px !important;
-}
 
-.slick-dots li button:before {
+
+#gallery  .slick-dots li button:before {
     color: #FFF !important;
     font-size: 18px !important;
     top: 10px !important;
 }
 
 
-.slick-dots li.slick-active button:before {
+#gallery  .slick-dots li.slick-active button:before {
     color: #ff0000 !important;
 }
 

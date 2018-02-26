@@ -1,33 +1,6 @@
 const db = require('../models')
 
 module.exports = {
-    create: function(req, res){
-        if(Array.isArray(req.body)){
-            db.Blog
-                .collection
-                .insert(req.body)
-                .then(function(dbModel){
-                    console.log("Create BULK Blog Post:\n", dbModel)
-                    res.json(dbModel)
-                })
-                .catch(function(err){
-                    console.log("Create BULK Blog Post Error:\n", err)
-                    res.json(err)
-                })
-        }
-        else{
-            db.Blog
-                .create(req.body)
-                .then(function(dbModel){
-                    console.log("Create New Blog Post:\n", dbModel)
-                    res.json(dbModel)
-                })
-                .catch(function(err){
-                    console.log("Create New Blog Post Error:\n", err)
-                    res.json(err)
-                })
-        }
-    },
 
     findPages: function(req,res){
         console.log("in find pages")
@@ -62,28 +35,15 @@ module.exports = {
             })
     },
 
-    update: function(req, res){
-        db.Blog
-            .findOneAndUpdate({ _id: req.params.id }, req.body)
-            .then(function(dbModel){
-                console.log("update Blog Post:\n", dbModel)
-            })
-            .catch(function(err){
-                console.log("update Blog Post Error:\n", err)
-                res.json(err)                
-            })
-    },
-
-    destroy: function(req, res){
+    getOne: function(req, res){
         db.Blog
             .findById({ _id:req.params.id })
             .then(function(dbModel){
-                console.log("destroy Blog Post:\n", dbModel)
-                dbModel.remove()
+                console.log("Find Blog Post:\n")
                 res.json(dbModel)                
             })
             .catch(function(err){
-                console.log("destroy Blog Post Error:\n", err)
+                console.log("Find Blog Post Error:\n", err)
                 res.json(err)
             })
     }

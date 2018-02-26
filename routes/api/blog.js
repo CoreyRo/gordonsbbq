@@ -9,10 +9,6 @@ const blog = require("../../controller/blogController.js")
 
 // api routes
     router
-        .route('/create')
-        .post(blog.create)
-    
-    router
         .route('/get/:num/:limit')
         .get(blog.findPages)
 
@@ -21,13 +17,11 @@ const blog = require("../../controller/blogController.js")
         .get(blog.findAll)
 
     router
-        .route('/update/:?')
-        .post(blog.update)
-
-    router
-        .route('/remove/:?')
-        .post(blog.destroy)
+        .route('/getone/:id')
+        .get(blog.getOne)
 
         
 
 module.exports = router
+
+

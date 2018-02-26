@@ -3,7 +3,11 @@
     padding-bottom: 50px;
 }
 
-ul, ol{
+.contactdiv-div ul{
+	padding: 0 ;
+}
+
+.contactdiv-div ol{
 	padding: 0 ;
 }
 

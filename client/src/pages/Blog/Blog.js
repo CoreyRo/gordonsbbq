@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import moment from 'moment'
+import Swiper from '../../components/Swiper'
 import './Blog.css'
 
 
@@ -20,11 +22,8 @@ class Blog extends Component {
 
     getProjects = () => {
         let queryString = `/api/blog/get/${this.state.page}/${this.state.limit}`
-        console.log("query",queryString)
         axios.get(queryString)
             .then((res) => {
-                console.log("blog result",res.data)
-                
                 this.setState({
                     docs: [...res.data.docs],
                     limit: res.data.limit,
@@ -82,43 +81,107 @@ class Blog extends Component {
                     </div>
                 </div>
                 <div className='mid-blog' style={{backgroundImage: 'url("../public/imgs/coalsbq2.jpg")'}}>
-                {this.state.docs.map(function(post,i){
-                    return(
-                    <div className='container'>
-                    <div className='blog-box' rel={post._id} key={i+post._id} id={`blog-post-${post._id}`}>
-                        <div className='container'>
+                    <div className='blog-holder'>
+                        <div className='container-fluid'>
                             <div className='row'>
-                            <div className='blog-header-div mobile-img'>
-                                <h3 className='blog-title' id={`blog-title-${post._id}`}>{post.title}</h3>
-                                <h5 className='blog-date' id={`blog-date-${post._id}`}>{moment(post.updatedAt).format(`dddd, MMMM Do YYYY h:mmA`)}</h5>
-                            </div>
-                            <div className='col-md-4 mobile-img'>
-                                    <div className='blog-img-div mx-auto text-center'>
-                                        <img className='blog-img img-fluid' id={`blog-img-${post._id}`} src={`https://gordonsbbq-backend.herokuapp.com/imgs/${post.img}`} alt={`img-${post.img}`}/>
-                                    </div>
-                                </div>
                                 <div className='col-md-8'>
-                                    <div className='blog-body-div mx-auto '>
-                                        <div className='blog-header-div desktop-img'>
-                                            <h3 className='blog-title' id={`blog-title-${post._id}`}>{post.title}</h3>
-                                            <h5 className='blog-date' id={`blog-date-${post._id}`}>{moment(post.updatedAt).format(`dddd, MMMM Do YYYY h:mmA`)}</h5>
+                                    {this.state.docs.map(function(post,i){
+                                        return(
+                                        <div className='row' key={i+post._id}>
+                                            <div className='blog-box' rel={post._id} id={`blog-post-${post._id}`}>
+                                                <div className='container-fluid'>
+                                                    <div className='row blog-body-div'>
+                                                        <div className='col-8'>
+                                                            <div className='blog-header-div'>
+                                                                <h3 className='blog-title' id={`blog-title-${post._id}`}>{post.title}</h3>
+                                                                <h5 className='blog-date' id={`blog-date-${post._id}`}>{moment(post.updatedAt).format(`dddd, MMMM Do YYYY h:mmA`)}</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div className='col-4'>
+                                                            <div className='open-link'>
+                                                                <Link to={`/post/${post._id}`}><p><i className="fas fa-external-link-alt"></i> view</p></Link>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className='blog-text-div'>
-                                            <p className='blog-text' id={`blog-text-p-${i}`}>{post.text}</p>
-                                        </div>
-                                    </div>
+                                        )
+                                    })}
                                 </div>
-                                <div className='col-md-4 desktop-img'>
-                                    <div className='blog-img-div mx-auto text-center'>
-                                        <img className='blog-img img-fluid' id={`blog-img-${post._id}`} src={`https://gordonsbbq-backend.herokuapp.com/imgs/${post.img}`} alt={`img-${post.img}`}/>
-                                    </div>
+                                <div className='col-md-4 slicker'>
+                                    <Swiper
+                                        items={[
+                                            {
+                                                img: 'life2.jpg',
+                                                txt: 'Life,'
+                                            },
+                                            {
+                                                img: 'life.jpg',
+                                                txt: 'Life,'
+                                            },
+                                            {
+                                                img: 'bbq2.jpg',
+                                                txt: 'BBQ,'
+                                            },
+                                            {
+                                                img: 'bbq.jpg',
+                                                txt: 'BBQ,'
+                                            },
+                                            {
+                                                img: 'everything2.jpg',
+                                                txt: 'Everything...'
+                                            },
+                                            {
+                                                img: 'everything.jpg',
+                                                txt: 'Everything...'
+                                            },
+                                        ]}
+                                        settings={{
+                                            autoplay: true,
+                                            autoplaySpeed: 4000,
+                                            fade: true,
+                                            dots: false,
+                                            arrows: false,
+                                            infinite: true,
+                                            initialSlide: 0,
+                                            slidesToScroll: 1,
+                                            slidesToShow: 1,
+                                            speed: 800,
+                                            responsive: [ 
+                                                { 
+                                                    breakpoint: 1024, 
+                                                    settings: { 
+                                                        slidesToShow: 3,
+                                                        slidesToScroll: 1, 
+                                                        arrows: false
+                                                    } 
+                                                }, 
+                                                { 
+                                                    breakpoint: 767, 
+                                                    settings: { 
+                                                        initailSlide: 2,
+                                                        slidesToShow: 2,
+                                                        slidesToScroll: 1,
+                                                        arrows: false
+                                                    } 
+                                                },
+                                                { 
+                                                    breakpoint: 480, 
+                                                    settings: { 
+                                                        slidesToShow: 1,
+                                                        slidesToScroll: 1,
+                                                        arrows: false
+                                                    } 
+                                                },
+                                        
+                                            ],
+                                        }}
+                                    />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div>
-                    )
-                })}
                 </div>
                 <div className='blog-btn-box'>
                     <div className='container'>
@@ -133,6 +196,7 @@ class Blog extends Component {
                         <p>Page {this.state.page} of {this.state.pages}</p>
                     </div>
                 </div>
+                <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"/>
             </div>
         )
     }

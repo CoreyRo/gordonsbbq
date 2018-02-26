@@ -1,5 +1,6 @@
 .blog-container{
-
+    padding: 0px 0px 0px 0px;
+    height: 100%;
 }
 .desktop-img{
     display: block !important;
@@ -8,28 +9,30 @@
     display: none !important;
 }
 
+.blog-holder{
+    background-color: #000000f3;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    padding: 50px 10px 50px 10px;
+    vertical-align: middle;
+}
+
 .blog-box{
-    background-color: #000000;
-    padding: 15px 5px 15px 5px;
     color: rgb(199, 199, 199);
-    margin-bottom: 3%;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.685);
+    margin: 5px auto 0 auto;
+    width:  100%;
 }
 
 .blog-btn-box{
     background-color: #000000;
     padding: 35px 0 15px 0;
 }
-.blog-btn-box p {
-    text-align: center;
-    background-color: #000000;
-    color: rgb(199, 199, 199);
-    padding: 0px 0 15px 0;
-    margin-top:10px
-}
+
 .mid-blog{
-    padding: 40px 0px 40px 0px;
-    background-size: contain;  
+    padding: 0px 0px 0px 0px;
+    background-size: cover;  
+    height: 100%;
 }
 
 .blog-header{
@@ -37,21 +40,19 @@
     padding: 5px 0px 0px 10px !important;
     margin: 0px 0px 0px 0px !important;
 }
+
 .top-container{
     padding-top: 30px;
     padding-bottom: 30px;
-
 }
 
 .blog-header .headerA{
     color: rgb(0, 0, 0);
-
     padding: 0px 0px 0px 0px !important;
     margin: 0 0 0 0 !important;
 }
 
 .blog-header .headerB{
-
     color: rgb(180, 0, 0);
     padding: 0px 0px 0px 0px !important;
     margin: 0 0 -20px 0 !important;
@@ -63,17 +64,14 @@
 
 .blog-img{
     max-width: 250px;
-
 }
 
 .blog-body-div {
-    border-bottom: 2px solid #fff;
+    border: 2px solid #fff;
 }
 
 .blog-header-div{
-    border-left: 2px solid #fff;
     padding: 4px 0px 4px 15px;
-
 }
 
 .blog-date{
@@ -86,10 +84,8 @@
 
 .blog-text-div {
     padding: 5px;
-    border-right: 2px solid #f0f0f0;
     white-space: pre-wrap;
     border-bottom: none;
-    
 }
 
 .blog-text{
@@ -115,8 +111,63 @@
     text-align: left;
 }
 
+.blog-holder  .slick-dots li.slick-active button:before {
+    color: #ff0000 !important;
+}
 
-@media screen and (max-width: 767px)  {
+#BBQ-Blog .card{
+    margin: 0px 0px 0px 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+#BBQ-Blog .card-body{
+    padding: 0 0 0 0 !important;
+    margin: 0 0 0 0 !important;
+    font-size: 18pt;
+    color: rgb(77, 77, 77);
+}
+
+
+#BBQ-Blog .slick-text{
+    position: relative;
+    top: 85%;
+    padding: 0 0 0 0 !important;
+    margin: 10px 0 0 0 !important;
+    font-size: 28pt;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.795);
+    font-family: 'Rock Salt', cursive;
+}
+
+#BBQ-Blog .slick-dots li button:before {
+    color: #FFF !important;
+    font-size: 6px !important;
+    top: 0px !important;
+    margin: 0px 0 0 0 !important;
+}
+
+#BBQ-Blog .open-link i{
+    text-align: right !important;
+}
+
+#BBQ-Blog .open-link p{
+    text-align: right !important;
+}
+
+@media screen and (max-width: 1024px)  {
+    .slicker{
+        margin-top: 0%;
+    }
+    
+    #BBQ-Blog .slick-text{
+        position: relative;
+        top: 80%;
+        padding: 0 0 0 0 !important;
+        margin: 10px 0 0 0 !important;
+        font-size: 16pt;
+    }
 
     .blog-header .headerA{
         color: rgb(0, 0, 0);
@@ -124,10 +175,6 @@
     
     .blog-header .headerB{
         font-size: 16pt;
-    }
-
-    .blog-body-div{
-        border-bottom: none;
     }
 
     .btn-row{
@@ -145,14 +192,83 @@
         margin: 0px !important;
         padding: 0px !important;
     }
-    .desktop-img{
-        display: none !important;
+
+}
+
+@media screen and (max-width: 992px)  {
+    .slicker{
+        margin-top: 0%;
     }
-    .mobile-img{
-        display: block !important;
+    
+    #BBQ-Blog .slick-text{
+        position: relative;
+        top: 80%;
+        padding: 0 0 0 0 !important;
+        margin: 10px 0 0 0 !important;
+        font-size: 16pt;
     }
-    .blog-text-div{
-        border-bottom: 2px solid #f0f0f0;
+
+    .blog-header .headerA{
+        color: rgb(0, 0, 0);
+    }
+    
+    .blog-header .headerB{
+        font-size: 16pt;
+    }
+
+    .btn-row{
+        padding-top: 0px;
+        border-top: none;
+    }
+    .btn-left{
+        text-align: right !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+        
+    .btn-right{
+        text-align: left !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+}
+
+@media screen and (max-width: 767px)  {
+    .slicker{
+        margin-top: 10%;
+    }
+    
+    #BBQ-Blog .slick-text{
+        position: relative;
+        top: 80%;
+        padding: 0 0 0 0 !important;
+        margin: 10px 0 0 0 !important;
+        font-size: 16pt;
+    }
+
+    .blog-header .headerA{
+        color: rgb(0, 0, 0);
+    }
+    
+    .blog-header .headerB{
+        font-size: 16pt;
+    }
+
+    .btn-row{
+        padding-top: 0px;
+        border-top: none;
+    }
+    .btn-left{
+        text-align: right !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+        
+    .btn-right{
+        text-align: left !important;
+        margin: 0px !important;
+        padding: 0px !important;
     }
 
 }

@@ -21,16 +21,16 @@ const Navbar = () => {
                 
                     <ul className="navbar-nav nav-tabs list-group" id="myNavBar">
                         <li className="nav-item">
-                            <Link className="nav-link" id='homeLink' to="/">Home <span className="sr-only">(current)</span></Link>
+                            <Link className="nav-link" id='homeLink' to="/"><i className="fas fa-home"></i> Home <span className="sr-only">(current)</span></Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link className="nav-link" to="/blog">Blog <span className="sr-only">(current)</span></Link>
+                            <Link className="nav-link" to="/blog"><i className="fas fa-database"></i> Blog <span className="sr-only">(current)</span></Link>
                         </li>
                         
 
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" id='soc-menu' data-toggle="dropdown" href='/' role="button" aria-haspopup="true" aria-expanded="false">Social Media</a>
+                            <a className="nav-link dropdown-toggle" id='soc-menu' data-toggle="dropdown" href='/' role="button" aria-haspopup="true" aria-expanded="false"><i className="fas fa-handshake"></i> Social Media</a>
                             <div className="dropdown-menu">
                                 <a className="dropdown-item d-inlne-block" id='insta' rel="noopener noreferrer" target='_blank' href="https://www.instagram.com/gordonsbbq/">Instagram</a>
                                 <a className="dropdown-item" id='fb' rel="noopener noreferrer" target='_blank' href="https://www.facebook.com/gordonsbarbecue/">Facebook</a>
@@ -40,7 +40,7 @@ const Navbar = () => {
                         </li>   
 
                         <li className="nav-item">
-                        <a className="nav-link" href="#contactForm"  data-toggle="modal" data-target="#contactForm">Contact <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#contactForm"  data-toggle="modal" data-target="#contactForm"><i className="fas fa-envelope"></i> Contact <span className="sr-only">(current)</span></a>
                         </li>
                                             
                     </ul> 

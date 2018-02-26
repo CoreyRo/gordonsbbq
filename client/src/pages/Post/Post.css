@@ -1,0 +1,83 @@
+.rich-text-div{
+    background-color: #FFF;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    height: 100%;
+    width: 100%;
+    white-space: pre-wrap !important;
+    list-style: unset !important;
+    font-family: unset !important;
+    font-size: unset !important;
+    line-height: unset !important;
+    text-align: unset !important;
+    font-weight: unset !important;
+    color: unset !important;
+}
+
+.rich-text-holder{
+    background-color: #FFF;
+    padding: 4px;
+    height: 100%;
+    width: 100%;
+}
+
+.post-div{
+    padding: 0px 0px 0px 0px;
+    background-size: auto;  
+    height: 100%;
+}
+
+.post-holder{
+    background-color: #000000f3;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    padding: 3% 3% 3% 3%;
+    vertical-align: middle;
+}
+
+#blog-post .top-container{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.post-holder .know-btn{
+    margin:3% auto 0 auto;
+    text-align: right !important;
+}
+
+.bot-row{
+    margin-top: 10px!important;
+}
+
+.share-cont{
+    padding: 0;
+    margin: 0;
+}
+
+.share{
+    position: relative;
+    text-align: left;
+    padding-left: 0;
+    color: #FFFFFF;
+}
+
+.share-network {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 1px;
+
+  }
+  
+  .share-network__share-count {
+    margin-top: 0px;
+    font-size: 12px;
+  }
+  
+  .share-network__share-button {
+    cursor: pointer;
+  }
+  
+  .share-network__share-button:hover:not(:active) {
+    opacity: 0.75;
+  }
