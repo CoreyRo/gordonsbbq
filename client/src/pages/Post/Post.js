@@ -74,7 +74,7 @@ class Post extends Component {
     componentWillUnmount() {}
 
     render() {
-        const shareUrl = 'www.gordonsbbq.net'
+        const shareUrl = window.location.href
         const title = this.state.title
         let desc = `Check out Gordon's blog post: ${this.state.title} on Gordonsbqq.net`
         let exampleImage = 'http://www.gordonsbbq.net/public/imgs/gbbq1.png'
