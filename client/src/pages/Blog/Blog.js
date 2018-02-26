@@ -74,7 +74,7 @@ class Blog extends Component {
     render(){
         return(
             <div id='BBQ-Blog' className='blog-container'>
-                <div className='container top-container'>
+                <div className='container-fluid top-container'>
                     <div id='blogheader' className='blog-header'>
                         <h1 className='headerA'>BBQ Blog Spot</h1>
                         <h4 className='headerB'>Life, BBQ, and everything</h4>.
