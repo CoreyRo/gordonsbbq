@@ -18,16 +18,16 @@ const ContactDiv = (props) => {
                                             <ul className='contact-checklist'>
                                                 <li>
                                                     <i className="fab fa-wpforms tag fa-lg"></i>
-                                                    <p>Fill out the contact form on my site: <a href="#contactForm"  data-toggle="modal" data-target="#contactForm"> <i class="fas fa-edit"></i>Contact Gordon's BBQ</a></p>
+                                                    <p>Fill out the contact form on my site: <a href="#contactForm"  data-toggle="modal" data-target="#contactForm">  <br/><i class="fas fa-edit"></i>Contact Gordon's BBQ</a></p>
                                                 </li>
                                                 <li>
-                                                    <i className="fas fa-comment tag fa-lg"></i><p> Direct message me on instagram: <a href='https://www.instagram.com/gordonsbbq/'target='_blank'rel='hashtags'><i class="fas fa-at"></i> gordonsbbq</a></p>
+                                                    <i className="fas fa-comment tag fa-lg"></i><p> Direct message me on instagram: <a href='https://www.instagram.com/gordonsbbq/'target='_blank'rel='hashtags'> <br/><i class="fas fa-at"></i> gordonsbbq</a></p>
                                                 </li>
                                                 
                                                 <li>
                                                     <i className="fab fa-facebook-square tag fa-lg"></i>
                                                     <p>
-                                                        Follow my page on Facebook: <a href='https://www.facebook.com/gordonsbarbecue/' target='_blank' rel='hashtags'><i class="fab fa-facebook-f"></i> Gordon's BBQ</a>
+                                                        Follow my page on Facebook: <a href='https://www.facebook.com/gordonsbarbecue/' target='_blank' rel='hashtags'> <br/><i class="fab fa-facebook-f"></i> Gordon's BBQ</a>
                                                     </p>
                                                 </li>
                                             </ul>                                            
@@ -41,7 +41,7 @@ const ContactDiv = (props) => {
                                 <div className='ContactDiv-text'>
                                     <div className='ContactDiv-h-container'>
                                         <div className='row'>
-                                            <div className='col-6'>
+                                            <div className='col-md-6'>
                                                 <ul className='contact-checklist'>
                                                     <li>
                                                         <i className="fas fa-fire tag fa-lg"></i>
@@ -57,7 +57,7 @@ const ContactDiv = (props) => {
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div className='col-6'>
+                                            <div className='col-md-6'>
                                                 <ul className='contact-checklist'>
                                                     <li>
                                                         <i className="fas fa-fire tag fa-lg"></i>
@@ -86,10 +86,7 @@ const ContactDiv = (props) => {
                                             <div className='col-12'>
                                             <ul className='contact-checklist'>
                                                 <li>
-                                                    <i className="fas fa-hashtag tag fa-lg"></i>
-                                                    <p>
-                                                        Upload your BBQ on instagram with the hashtag:
-                                                        <a href='https://www.instagram.com/explore/tags/gordonsbbq/'target='_blank'rel='hashtags'> <i class="fas fa-hashtag"></i>gordonsbbq</a>
+                                                    <i className="fas fa-hashtag tag fa-lg"></i><p>Upload your BBQ on instagram with the hashtag: <a href='https://www.instagram.com/explore/tags/gordonsbbq/'target='_blank'rel='hashtags'>  <br/><i class="fas fa-hashtag"></i>gordonsbbq</a>
                                                     </p>
                                                 </li>
                                                 
@@ -97,14 +94,14 @@ const ContactDiv = (props) => {
                                                     <i className="fas fa-hashtag tag fa-lg"></i>
                                                     <p>
                                                         Find real BBQ done right on:
-                                                        <a href='https://www.instagram.com/explore/tags/getoffyourgas/' target='_blank' rel='hashtags'><i class="fas fa-hashtag"></i>getoffyourgas</a>
+                                                        <a href='https://www.instagram.com/explore/tags/getoffyourgas/' target='_blank' rel='hashtags'> <br/><i class="fas fa-hashtag"></i>getoffyourgas</a>
                                                     </p>
                                                 </li>
                                                 <li>
                                                     <i className="fas fa-hashtag tag fa-lg"></i>
                                                     <p>
                                                         Find other great pitmasters and grill-masters alike on:
-                                                        <a href='https://www.instagram.com/explore/tags/bbqbrethren/' target='_blank' rel='hashtags'> <i class="fas fa-hashtag"></i>bbqbrethren</a>
+                                                        <a href='https://www.instagram.com/explore/tags/bbqbrethren/' target='_blank' rel='hashtags'>  <br/><i class="fas fa-hashtag"></i>bbqbrethren</a>
                                                     </p>
                                                 </li>
                                             </ul>

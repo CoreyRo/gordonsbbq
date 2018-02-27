@@ -23,6 +23,13 @@
     font-size: 16px;
     color: #595959;
     margin-bottom: 20px;
+    word-wrap: normal;
+
+}
+
+
+.contact-checklist br{
+    display: none;
 }
 
 .contact-checklist li{
@@ -97,6 +104,10 @@
 
 
 @media screen and (max-width: 767px)  {
+
+    .contact-checklist br{
+        display: unset;
+    }
 	.contact-text p{
 		margin-bottom: 15px;
 	}
