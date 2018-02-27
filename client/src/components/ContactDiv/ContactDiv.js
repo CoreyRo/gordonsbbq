@@ -18,9 +18,7 @@ const ContactDiv = (props) => {
                                             <ul className='contact-checklist'>
                                                 <li>
                                                     <i className="fab fa-wpforms tag fa-lg"></i>
-                                                    <p>
-                                                        Fill out the contact form on my site: <a href='https://www.instagram.com/explore/tags/bbqbrethren/' target='_blank' rel='hashtags'> <i class="fas fa-edit"></i>Contact Gordon's BBQ</a>
-                                                    </p>
+                                                    <p>Fill out the contact form on my site: <a href="#contactForm"  data-toggle="modal" data-target="#contactForm"> <i class="fas fa-edit"></i>Contact Gordon's BBQ</a></p>
                                                 </li>
                                                 <li>
                                                     <i className="fas fa-comment tag fa-lg"></i><p> Direct message me on instagram: <a href='https://www.instagram.com/gordonsbbq/'target='_blank'rel='hashtags'><i class="fas fa-at"></i> gordonsbbq</a></p>
@@ -29,7 +27,7 @@ const ContactDiv = (props) => {
                                                 <li>
                                                     <i className="fab fa-facebook-square tag fa-lg"></i>
                                                     <p>
-                                                        Follow my page on Facebook: <a href='https://www.instagram.com/explore/tags/getoffyourgas/' target='_blank' rel='hashtags'><i class="fab fa-facebook-f"></i> Gordon's BBQ</a>
+                                                        Follow my page on Facebook: <a href='https://www.facebook.com/gordonsbarbecue/' target='_blank' rel='hashtags'><i class="fab fa-facebook-f"></i> Gordon's BBQ</a>
                                                     </p>
                                                 </li>
                                             </ul>                                            
