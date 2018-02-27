@@ -44,7 +44,7 @@ class Post extends Component {
     }
 
     componentWillMount() {}
-
+    
     componentDidMount() {
         let id = window
             .location
@@ -62,6 +62,11 @@ class Post extends Component {
                             .data
                             .richText
                             .replace(/...imgs/g, 'http://gordonsbbq-backend.herokuapp.com/imgs')
+                    },()=>{
+                        var imgs = document.getElementsByTagName("img");
+                        for(let i = 0; i < imgs.length; i++){
+                            imgs[i].className += " img-fluid"
+                        }
                     });
             })
             .catch((err) => {
