@@ -10,7 +10,7 @@ class Blog extends Component {
     
     state = { 
         docs: [],
-        limit: 3,
+        limit: 10,
         page: 1,
         pages: 0,
         total: 0
@@ -183,6 +183,8 @@ class Blog extends Component {
                         </div>
                     </div>
                 </div>
+                
+                {this.state.pages > 1 ? 
                 <div className='blog-btn-box'>
                     <div className='container'>
                         <div className='row btn-row'>
@@ -196,6 +198,10 @@ class Blog extends Component {
                         <p>Page {this.state.page} of {this.state.pages}</p>
                     </div>
                 </div>
+                    : 
+                ''}
+
+
                 <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"/>
             </div>
         )

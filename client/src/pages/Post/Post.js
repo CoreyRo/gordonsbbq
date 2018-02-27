@@ -62,8 +62,6 @@ class Post extends Component {
                             .data
                             .richText
                             .replace(/...imgs/g, 'http://gordonsbbq-backend.herokuapp.com/imgs')
-                    }, function () {
-                        document.location.href = '#blog-post';
                     });
             })
             .catch((err) => {

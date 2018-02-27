@@ -11,9 +11,9 @@
 	padding: 0 ;
 }
 
-#ContactDiv-first-row .fa-check{
-	margin-right: 15px;
-	color: #ff0000;
+
+#ContactDiv-first-row{
+	margin: 0 auto !important;
 }
 
 .checklist li{
@@ -35,9 +35,9 @@
     line-height: 45px;
 }
 
-.fa-fire{
-    margin-right: 15px;
-	color: #ff0000;
+.tag{
+    color: #ff0000;
+    padding:2px;
 }
 
 #charcoal{
