@@ -11,6 +11,7 @@ gordonsbbq.net is a personal blog and social media hub for Gordon Branchaud's BB
 ---
 ## Status
 - #### WORK IN PROGRESS
+- #### on hold pending client
 
 ---
 ## Installation (Source Code)
