@@ -4,6 +4,7 @@
 Corey Rodems
 
 ## Description
+MERN stack app
 gordonsbbq.net is a personal blog and social media hub for Gordon Branchaud's BBQ projects.
 
 
